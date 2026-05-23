@@ -636,7 +636,7 @@
         .stamp { transition: none; }
       }
 
-      /* ---------- Harbour banner (letterhead) ---------- */
+      /* ---------- Skyline banner (letterhead) ---------- */
       .banner {
         margin: 0 0 clamp(24px, 3vw, 36px);
         border-bottom: 1px solid var(--ink);
@@ -646,10 +646,10 @@
       .banner img {
         display: block;
         width: 100%;
-        height: auto;
-        max-height: clamp(120px, 18vw, 220px);
+        height: clamp(150px, 22vw, 300px);
         object-fit: cover;
-        filter: saturate(0.7) sepia(0.1) contrast(1.02);
+        object-position: center 42%;
+        filter: saturate(0.82) sepia(0.08) contrast(1.08) brightness(0.94);
       }
       .banner::after {
         /* very subtle ink wash to seat the image in the paper palette */
@@ -672,7 +672,7 @@
         text-shadow: 0 1px 2px rgba(0,0,0,0.5);
       }
       @media (max-width: 640px) {
-        .banner img { max-height: 110px; }
+        .banner img { height: 132px; }
       }
 
       /* ---------- Lightbox ---------- */
@@ -857,8 +857,8 @@
     <div class="sheet">
 
       <figure class="banner" aria-hidden="true">
-        <img src="assets/banner-harbour.jpg" alt="A panorama of the Grand Harbour — Valletta bastions to the left, Fort St Angelo and the Three Cities to the right." loading="eager" decoding="async" />
-        <figcaption>The Grand Harbour · from the Upper Barrakka</figcaption>
+        <img src="assets/banner-valletta-skyline-test.jpg" alt="The Valletta skyline with the Carmelite dome and St Paul's Anglican Pro-Cathedral spire under the afternoon sun." loading="eager" decoding="async" />
+        <figcaption>Valletta skyline · from Archbishop Street</figcaption>
       </figure>
 
       <header class="masthead">
@@ -1254,6 +1254,6 @@
         });
       })();
     </script>
-    <span class="deploy-stamp" aria-hidden="true">2026-05-23 15:18 UTC</span>
+    <span class="deploy-stamp" aria-hidden="true">2026-05-23 15:33 UTC</span>
   </body>
 </html>
