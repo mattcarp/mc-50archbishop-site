@@ -254,6 +254,13 @@
         letter-spacing: 0.18em;
         margin-bottom: 2px;
       }
+      .stamp span {
+        display: block;
+        max-width: 240px;
+        font-size: 9px;
+        line-height: 1.45;
+        letter-spacing: 0.14em;
+      }
 
       .colophon {
         display: grid;
@@ -671,8 +678,26 @@
         opacity: 0.8;
         text-shadow: 0 1px 2px rgba(0,0,0,0.5);
       }
+      .banner-note {
+        margin: calc(clamp(24px, 3vw, 36px) * -0.55) 0 clamp(24px, 3vw, 36px);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        text-align: right;
+      }
+      .banner-note strong {
+        font-weight: 400;
+        color: var(--ink);
+      }
       @media (max-width: 640px) {
         .banner img { height: 132px; }
+        .banner-note {
+          margin-top: -12px;
+          text-align: left;
+          line-height: 1.6;
+        }
       }
 
       /* ---------- Lightbox ---------- */
@@ -860,6 +885,7 @@
         <img src="assets/banner-valletta-skyline-cropped.jpg" alt="The Valletta skyline with the Carmelite dome and St Paul's Anglican Pro-Cathedral spire above the rooftops." loading="eager" decoding="async" />
         <figcaption>Valletta skyline · from Archbishop Street</figcaption>
       </figure>
+      <p class="banner-note"><strong>Next Door: the rooftop lounge at The Capital Boutique Hotel</strong></p>
 
       <header class="masthead">
         <div class="m-left">Est. MMXXVI</div>
@@ -898,6 +924,7 @@
           </figcaption>
           <div class="stamp" aria-label="Available for long-term let">
             <strong>To Let</strong>
+            <span>EUR 2,500 per month · six-month minimum · furnished · long-term let</span>
           </div>
         </figure>
       </section>
@@ -910,7 +937,7 @@
           <p>
             The rooms are furnished and hung: a kitchen lounge, a sitting room behind tall doors with a flat-screen television, a bedroom with a Venetian chandelier and a second television, a small writing desk and monitor by the entry, a fitted bathroom, and a separate utility room with washer-dryer. Original art on most walls. It is a working home — lived in, not staged — and a quiet one, by the measure of Valletta streets.
           </p>
-          <p class="sig">— The Owner, April 2026.</p>
+          <p class="sig">— The Owner, May 2026.</p>
         </div>
 
         <aside class="card" aria-labelledby="card-title">
@@ -922,7 +949,13 @@
             <dt>Layout</dt><dd>Main floor: lounge, kitchen, sitting room, bedroom, utility room with washer and dryer.</dd>
             <dt>Nearest</dt><dd>St John’s Co-Cathedral</dd>
             <dt>Fabric</dt><dd>Limestone, terrazzo, timber</dd>
-            <dt>Tenancy</dt><dd><em>Long-term let (2–6 months preferred)</em></dd>
+            <dt>Rent</dt><dd><em>EUR 2,500 per month</em></dd>
+            <dt>Tenancy</dt><dd><em>Long-term let · six-month minimum</em></dd>
+            <dt>Furnished</dt><dd>Yes</dd>
+            <dt>Availability</dt><dd>May 2026</dd>
+            <dt>Deposit</dt><dd>By agreement</dd>
+            <dt>Utilities</dt><dd>By agreement</dd>
+            <dt>Viewings</dt><dd>By appointment</dd>
             <dt>Status</dt><dd><em>Available</em></dd>
           </dl>
         </aside>
@@ -1020,7 +1053,7 @@
           <article class="prog-item">
             <p class="prog-roman">ii.</p>
             <h3 class="prog-head">The Terms</h3>
-            <p class="prog-body">A long-term home, let by the month rather than the night. Fully furnished and ready to move into; references appreciated.</p>
+            <p class="prog-body">A long-term home, let by the month rather than the night: EUR 2,500 per month, furnished, with a six-month minimum. Viewings are by appointment; deposit, utilities and final terms can be settled in correspondence.</p>
           </article>
           <article class="prog-item">
             <p class="prog-roman">iii.</p>
@@ -1254,6 +1287,6 @@
         });
       })();
     </script>
-    <span class="deploy-stamp" aria-hidden="true">2026-05-23 15:49 UTC</span>
+    <span class="deploy-stamp" aria-hidden="true">2026-05-24 19:33 UTC</span>
   </body>
 </html>
