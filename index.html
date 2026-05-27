@@ -653,9 +653,7 @@
       .banner img {
         display: block;
         width: 100%;
-        height: clamp(150px, 22vw, 300px);
-        object-fit: cover;
-        object-position: center bottom;
+        height: auto;
         filter: saturate(0.82) sepia(0.08) contrast(1.08) brightness(0.94);
       }
       .banner::after {
@@ -692,7 +690,7 @@
         color: var(--ink);
       }
       @media (max-width: 640px) {
-        .banner img { height: 132px; }
+        .banner img { height: auto; }
         .banner-note {
           margin-top: -12px;
           text-align: left;
@@ -1287,6 +1285,6 @@
         });
       })();
     </script>
-    <span class="deploy-stamp" aria-hidden="true">2026-05-27 18:42 UTC</span>
+    <span class="deploy-stamp" aria-hidden="true">2026-05-27 18:53 UTC</span>
   </body>
 </html>
