@@ -204,6 +204,36 @@
       }
       dl.meta dd em { font-family: "DM Serif Display", serif; font-size: 1.08em; }
 
+      .plate-photo {
+        margin: 0;
+        padding: clamp(32px, 4vw, 48px) 0 0;
+      }
+      .plate-photo .frame {
+        border: 1px solid var(--ink);
+        background: var(--ink);
+      }
+      .plate-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        filter: saturate(0.95) contrast(1.02);
+      }
+      .plate-photo figcaption {
+        padding: 10px 14px;
+        border: 1px solid var(--ink);
+        border-top: none;
+        background: var(--paper-hi);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .plate-photo figcaption .plate-no { color: var(--oxblood); font-weight: 500; }
+
       .plates-pending {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -391,7 +421,7 @@
             Beneath Floor I lies the older half of the house — Floor Zero — joined to it by a stone staircase of 1647, older than the street numbering, older than most of the city's furniture, and, by the Owner's reckoning, the more beautiful of the two floors.
           </p>
           <p>
-            Its portrait is not yet taken. The plates below stand empty until the photographs arrive; when they do, this page will fill the way the upper floor's did — room by room, in order.
+            Its portrait has begun — the first plate is in. The frames below stand empty until the rest of the photographs arrive; more, and better, are promised. When they come, this page will fill the way the upper floor's did — room by room, in order.
           </p>
           <p class="sig">— The Owner.</p>
         </div>
@@ -404,11 +434,26 @@
             <dt>Reached by</dt><dd><em>A staircase of 1647</em></dd>
             <dt>City</dt><dd>Il-Belt Valletta</dd>
             <dt>Island</dt><dd>Malta</dd>
-            <dt>Photographs</dt><dd>Forthcoming</dd>
+            <dt>Photographs</dt><dd>Arriving — the first is in</dd>
             <dt>Status</dt><dd><em>Not yet available</em></dd>
           </dl>
         </aside>
       </section>
+
+      <figure class="plate-photo">
+        <div class="frame">
+          <img
+            src="../assets/flat0-01-chaise.jpg"
+            alt="A chaise longue in gold brocade against a limestone wall, beside a black-framed glazed door to the courtyard. A wire side table holds a small lamp and a green faceted vase; above hang a framed linocut portrait and a tall mirror."
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+        <figcaption>
+          <span class="plate-no">Plate I</span>
+          <span>The Chaise, by the Courtyard Door</span>
+        </figcaption>
+      </figure>
 
       <section class="plates-pending" aria-label="Plates awaiting photographs">
         <div class="stamp" aria-label="Awaiting plates">
@@ -418,21 +463,21 @@
         <figure class="plate-frame">
           <div class="well"><span>Awaiting photograph</span></div>
           <figcaption>
-            <span class="plate-no">Plate I</span>
+            <span class="plate-no">Plate II</span>
             <span>The Staircase, 1647</span>
           </figcaption>
         </figure>
         <figure class="plate-frame">
           <div class="well"><span>Awaiting photograph</span></div>
           <figcaption>
-            <span class="plate-no">Plate II</span>
+            <span class="plate-no">Plate III</span>
             <span>—</span>
           </figcaption>
         </figure>
         <figure class="plate-frame">
           <div class="well"><span>Awaiting photograph</span></div>
           <figcaption>
-            <span class="plate-no">Plate III</span>
+            <span class="plate-no">Plate IV</span>
             <span>—</span>
           </figcaption>
         </figure>
