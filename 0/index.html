@@ -386,7 +386,7 @@
     <div class="sheet">
 
       <header class="masthead">
-        <div class="m-left"><a href="/">← Floor I</a></div>
+        <div class="m-left"><a href="/">← Floor 1</a></div>
         <div class="m-center">
           <svg class="fanlight" width="62" height="32" viewBox="0 0 64 34" fill="none" aria-hidden="true">
             <path d="M4 32 A28 28 0 0 1 60 32" stroke="currentColor" stroke-width="1.4"/>
@@ -402,7 +402,7 @@
 
       <section class="hero">
         <div class="folio" aria-hidden="true">
-          <span class="folio-no">№ 50 / 0</span>
+          <span class="folio-no">№ 50 · Floor 0</span>
           <span>35°53′55″ N</span>
           <span>14°30′43″ E</span>
         </div>
@@ -450,7 +450,7 @@
           />
         </div>
         <figcaption>
-          <span class="plate-no">Plate I</span>
+          <span class="plate-no">Plate 1</span>
           <span>The Chaise, by the Courtyard Door</span>
         </figcaption>
       </figure>
@@ -463,21 +463,21 @@
         <figure class="plate-frame">
           <div class="well"><span>Awaiting photograph</span></div>
           <figcaption>
-            <span class="plate-no">Plate II</span>
+            <span class="plate-no">Plate 2</span>
             <span>The Staircase, 1647</span>
           </figcaption>
         </figure>
         <figure class="plate-frame">
           <div class="well"><span>Awaiting photograph</span></div>
           <figcaption>
-            <span class="plate-no">Plate III</span>
+            <span class="plate-no">Plate 3</span>
             <span>—</span>
           </figcaption>
         </figure>
         <figure class="plate-frame">
           <div class="well"><span>Awaiting photograph</span></div>
           <figcaption>
-            <span class="plate-no">Plate IV</span>
+            <span class="plate-no">Plate 4</span>
             <span>—</span>
           </figcaption>
         </figure>
@@ -486,17 +486,21 @@
       <section class="correspondence">
         <p class="cta-text">The upper floor, meanwhile, is photographed in full.</p>
         <a class="quill" href="/">
-          <span>Floor I</span>
+          <span>Floor 1</span>
           <span class="arrow">→</span>
         </a>
       </section>
 
       <footer class="imprint">
-        <div>50 Archbishop Street · Valletta · Malta · <a href="/">Floor I</a> · Floor 0</div>
+        <div>50 Archbishop Street · Valletta · Malta · <a href="/">Floor 1</a> · Floor 0</div>
         <div class="marks">·&nbsp;&nbsp;·&nbsp;&nbsp;·</div>
-        <div>Set in Caslon &amp; DM Serif · MMXXVI</div>
+        <div>Set in Caslon &amp; DM Serif · <span id="colophon-year">2026</span></div>
       </footer>
 
     </div>
+    <script>
+      var yearEl = document.getElementById('colophon-year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
