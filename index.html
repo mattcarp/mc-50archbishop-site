@@ -463,46 +463,6 @@
         grid-column: span 2;
       }
 
-      .correspondence {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        padding: clamp(40px, 5vw, 56px) 0 clamp(32px, 4vw, 40px);
-      }
-      .cta-text {
-        font-family: "DM Serif Display", serif;
-        font-size: clamp(1.4rem, 2.6vw, 1.9rem);
-        font-style: italic;
-        color: var(--ink);
-        margin: 0;
-        max-width: 34ch;
-        line-height: 1.25;
-      }
-      a.quill {
-        display: inline-flex;
-        align-items: baseline;
-        gap: 10px;
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 12px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--ink);
-        text-decoration: none;
-        padding: 16px 22px;
-        border: 1px solid var(--ink);
-        background: transparent;
-        transition: background-color 0.25s ease, color 0.25s ease;
-        white-space: nowrap;
-      }
-      a.quill:hover { background: var(--ink); color: var(--paper-hi); }
-      a.quill .arrow {
-        font-family: "DM Serif Display", serif;
-        font-size: 16px;
-        transform: translateY(1px);
-      }
-
       footer.imprint {
         padding-top: 28px;
         border-top: 1px solid var(--rule);
@@ -1121,14 +1081,6 @@
         </div>
       </section>
 
-      <section class="correspondence" id="enquire">
-        <p class="cta-text">For enquiries about the house, kindly write.</p>
-        <a class="quill" href="#contact-form">
-          <span>Post a letter</span>
-          <span class="arrow">→</span>
-        </a>
-      </section>
-
       <section class="contact-form-section" id="contact-form" aria-labelledby="contact-form-title">
         <header class="section-head">
           <h2 id="contact-form-title" class="section-title">Correspondence</h2>
@@ -1149,7 +1101,7 @@
           </div>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
           <input type="hidden" name="_subject" value="Enquiry via 50archbishop.com" />
-          <button type="submit">Post the letter →</button>
+          <button type="submit">Send</button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
@@ -1271,7 +1223,7 @@
           }).then(function(r) {
             if (r.ok) {
               form.reset();
-              status.textContent = 'Thank you — your letter has been posted.';
+              status.textContent = 'Thank you — sent.';
               status.className = 'form-status is-success';
             } else {
               return r.json().then(function(j) {
@@ -1287,6 +1239,6 @@
         });
       })();
     </script>
-    <span class="deploy-stamp" aria-hidden="true">2026-07-19 09:04 UTC</span>
+    <span class="deploy-stamp" aria-hidden="true">2026-07-19 09:31 UTC</span>
   </body>
 </html>
