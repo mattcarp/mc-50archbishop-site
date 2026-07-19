@@ -157,13 +157,13 @@
       .m-left, .m-right, .m-center {
         font-family: "IBM Plex Mono", ui-monospace, monospace;
         font-size: 11px;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--ink-soft);
       }
       .m-right { text-align: right; }
       .m-center {
-        letter-spacing: 0.3em;
+        letter-spacing: 0.12em;
         color: var(--ink);
         font-weight: 500;
         text-align: center;
@@ -179,40 +179,14 @@
         padding: clamp(30px, 5vw, 56px) 0 clamp(40px, 6vw, 64px);
       }
 
-      .folio {
-        position: absolute;
-        top: 12px;
-        right: 0;
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 10px;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--ink-soft);
-        text-align: right;
-        line-height: 1.55;
-      }
-      .folio span { display: block; }
-      .folio .folio-no { color: var(--ink); font-weight: 500; }
-
       .eyebrow {
         font-family: "IBM Plex Mono", monospace;
         font-size: 11px;
-        letter-spacing: 0.32em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--ink-soft);
         margin: 0 0 clamp(16px, 2vw, 24px);
-        display: flex;
-        align-items: center;
-        gap: 14px;
       }
-      .eyebrow::before, .eyebrow::after {
-        content: "";
-        flex: 0 0 auto;
-        width: 28px;
-        height: 1px;
-        background: var(--ink);
-      }
-      .eyebrow::after { flex: 1; }
 
       h1.wordmark {
         font-family: "DM Serif Display", serif;
@@ -256,7 +230,7 @@
         background: linear-gradient(0deg, rgba(26,22,18,0.75), transparent);
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--paper);
         display: flex;
@@ -275,7 +249,7 @@
         font-family: "IBM Plex Mono", monospace;
         font-size: 11px;
         font-weight: 500;
-        letter-spacing: 0.28em;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
         background: rgba(234,226,209,0.92);
       }
@@ -283,7 +257,7 @@
         font-weight: 700;
         display: block;
         font-size: 14px;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.1em;
         margin-bottom: 2px;
       }
       .stamp span {
@@ -291,7 +265,7 @@
         max-width: 240px;
         font-size: 9px;
         line-height: 1.45;
-        letter-spacing: 0.14em;
+        letter-spacing: 0.08em;
       }
 
       .colophon {
@@ -300,7 +274,6 @@
         gap: clamp(32px, 6vw, 80px);
         padding: clamp(40px, 5vw, 64px) 0;
         border-top: 1px solid var(--rule);
-        border-bottom: 1px solid var(--rule);
       }
 
       .prose p {
@@ -318,22 +291,14 @@
       }
 
       .card {
-        border: 1px solid var(--ink);
+        border: 1px solid var(--rule);
         padding: 28px 30px 32px;
         background: linear-gradient(180deg, rgba(255,250,240,0.4), rgba(217,205,181,0.15));
-        position: relative;
-      }
-      .card::before {
-        content: "";
-        position: absolute;
-        top: 8px; left: 8px; right: 8px; bottom: 8px;
-        border: 1px solid var(--rule);
-        pointer-events: none;
       }
       .card-title {
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--ink-soft);
         margin: 0 0 18px;
@@ -350,7 +315,7 @@
       dl.meta dt {
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.18em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--ink-soft);
       }
@@ -391,7 +356,7 @@
         border-top: 1px solid var(--ink);
         font-family: "IBM Plex Mono", monospace;
         font-size: 9px;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--ink-soft);
         display: flex;
@@ -402,13 +367,7 @@
 
       .section-head, .nbhd-head {
         padding: clamp(36px, 4vw, 56px) 0 clamp(20px, 2.5vw, 28px);
-        border-top: 1px solid var(--rule);
         margin-bottom: clamp(24px, 3vw, 36px);
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 16px;
       }
       .section-title {
         font-family: "DM Serif Display", serif;
@@ -419,21 +378,11 @@
         color: var(--ink);
         letter-spacing: -0.01em;
       }
-      .section-sub {
-        font-family: "IBM Plex Mono", monospace;
-        font-size: 11px;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--ink-soft);
-        margin: 0;
-      }
-
       .programme {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 0;
         padding: 0 0 clamp(40px, 5vw, 56px);
-        border-bottom: 1px solid var(--rule);
       }
       .prog-item {
         padding: 8px clamp(16px, 2.5vw, 32px);
@@ -458,7 +407,6 @@
 
       .neighbourhood {
         padding-bottom: clamp(48px, 6vw, 72px);
-        border-bottom: 1px solid var(--rule);
       }
       .nbhd-grid {
         display: grid;
@@ -481,7 +429,7 @@
       .stop-dist {
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--oxblood);
         margin: 0 0 10px;
@@ -522,7 +470,6 @@
         justify-content: space-between;
         gap: 24px;
         padding: clamp(40px, 5vw, 56px) 0 clamp(32px, 4vw, 40px);
-        border-bottom: 1px solid var(--rule);
       }
       .cta-text {
         font-family: "DM Serif Display", serif;
@@ -539,7 +486,7 @@
         gap: 10px;
         font-family: "IBM Plex Mono", monospace;
         font-size: 12px;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--ink);
         text-decoration: none;
@@ -558,13 +505,14 @@
 
       footer.imprint {
         padding-top: 28px;
+        border-top: 1px solid var(--rule);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 16px;
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--ink-soft);
       }
@@ -593,7 +541,6 @@
       @media (max-width: 820px) {
         h1.wordmark { font-size: clamp(2.8rem, 13vw, 4.8rem); }
         .hero-photo img { aspect-ratio: 4 / 5; }
-        .folio { position: static; text-align: left; margin-bottom: 20px; }
         .colophon { grid-template-columns: 1fr; }
         .diptych { grid-template-columns: 1fr; }
         .programme { grid-template-columns: 1fr; }
@@ -669,7 +616,7 @@
         right: clamp(14px, 2.5vw, 28px);
         font-family: "IBM Plex Mono", monospace;
         font-size: 9px;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--paper);
         opacity: 0.8;
@@ -679,7 +626,7 @@
         margin: calc(clamp(16px, 2vw, 24px) * -0.5) 0 clamp(14px, 2vw, 22px);
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--ink-soft);
         text-align: right;
@@ -787,7 +734,7 @@
       }
 
       /* ---------- Enquiries answered (FAQ) ---------- */
-      .faq { padding-bottom: clamp(40px, 5vw, 64px); border-bottom: 1px solid var(--rule); }
+      .faq { padding-bottom: clamp(40px, 5vw, 64px); }
       .faq-list {
         display: grid;
         gap: clamp(20px, 2.6vw, 30px);
@@ -828,7 +775,6 @@
       /* ---------- Contact form ---------- */
       .contact-form-section {
         padding: clamp(40px, 5vw, 64px) 0;
-        border-bottom: 1px solid var(--rule);
       }
       .contact-form {
         display: grid;
@@ -840,7 +786,7 @@
         display: block;
         font-family: "IBM Plex Mono", monospace;
         font-size: 10px;
-        letter-spacing: 0.22em;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--ink-soft);
         margin-bottom: 8px;
@@ -869,7 +815,7 @@
       .contact-form button {
         font-family: "IBM Plex Mono", monospace;
         font-size: 12px;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--paper-hi);
         background: var(--ink);
@@ -910,7 +856,7 @@
       <p class="banner-note">Photographed from the rooftop lounge next door · The Capital Boutique Hotel</p>
 
       <header class="masthead">
-        <div class="m-left">Est. 2026</div>
+        <div class="m-left">Valletta · Malta</div>
         <div class="m-center">
           <svg class="fanlight" width="62" height="32" viewBox="0 0 64 34" fill="none" aria-hidden="true">
             <path d="M4 32 A28 28 0 0 1 60 32" stroke="currentColor" stroke-width="1.4"/>
@@ -921,16 +867,10 @@
           </svg>
           50 Archbishop
         </div>
-        <div class="m-right">Valletta · Malta</div>
+        <div class="m-right">Floor 1</div>
       </header>
 
       <section class="hero">
-        <div class="folio" aria-hidden="true">
-          <span class="folio-no">№ 50 · Floor 1</span>
-          <span>35°53′55″ N</span>
-          <span>14°30′43″ E</span>
-        </div>
-
         <p class="eyebrow">A Valletta apartment</p>
 
         <h1 class="wordmark">
@@ -1073,7 +1013,6 @@
       <section class="programme-wrap" aria-labelledby="prog-title">
         <header class="section-head">
           <h2 id="prog-title" class="section-title">The Particulars</h2>
-          <p class="section-sub">What the apartment is.</p>
         </header>
 
         <div class="programme">
@@ -1095,7 +1034,6 @@
       <section class="neighbourhood" aria-labelledby="nbhd-title">
         <header class="nbhd-head">
           <h2 id="nbhd-title" class="section-title">The Neighbourhood</h2>
-          <p class="section-sub">Within a short walk of the door.</p>
         </header>
 
         <div class="nbhd-grid">
@@ -1157,7 +1095,6 @@
       <section class="faq" aria-labelledby="faq-title">
         <header class="nbhd-head">
           <h2 id="faq-title" class="section-title">Enquiries, Answered</h2>
-          <p class="section-sub">The particulars, plainly put.</p>
         </header>
 
         <div class="faq-list">
@@ -1195,7 +1132,6 @@
       <section class="contact-form-section" id="contact-form" aria-labelledby="contact-form-title">
         <header class="section-head">
           <h2 id="contact-form-title" class="section-title">Correspondence</h2>
-          <p class="section-sub">All enquiries about the house.</p>
         </header>
 
         <form class="contact-form" id="enquiry-form" method="POST" action="https://formspree.io/f/mbdqyrra" novalidate>
@@ -1351,6 +1287,6 @@
         });
       })();
     </script>
-    <span class="deploy-stamp" aria-hidden="true">2026-07-19 08:54 UTC</span>
+    <span class="deploy-stamp" aria-hidden="true">2026-07-19 09:04 UTC</span>
   </body>
 </html>
