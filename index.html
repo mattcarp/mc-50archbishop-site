@@ -1,100 +1,1244 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>50 Archbishop Street</title>
-  <meta name="description" content="Photographs of my home at 50 Archbishop Street in Valletta." />
-  <link rel="canonical" href="https://50archbishop.com/" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta property="og:title" content="50 Archbishop Street" />
-  <meta property="og:description" content="Photographs of my home in Valletta." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://50archbishop.com/" />
-  <meta property="og:image" content="https://50archbishop.com/assets/og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#0b0b0b" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0b'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial' font-size='16' fill='%23f1f1ed'%3E50%3C/text%3E%3C/svg%3E" />
-  <link rel="preload" href="assets/photo-01-hero-kitchen-lounge.jpg" as="image" />
-  <style>
-    :root { --bg:#0b0b0b; --ink:#f1f1ed; --muted:#8e8e88; --line:#30302d; --pad:clamp(16px,2.5vw,40px); }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; color:var(--ink); background:var(--bg); font:14px/1.4 Arial,Helvetica,sans-serif; -webkit-font-smoothing:antialiased; }
-    img { display:block; width:100%; }
-    a { color:inherit; text-underline-offset:3px; }
-    .top { display:flex; justify-content:space-between; gap:20px; padding:18px var(--pad); border-bottom:1px solid var(--line); }
-    .top span:last-child { color:var(--muted); }
-    .intro { display:grid; grid-template-columns:1fr 1fr; gap:var(--pad); padding:clamp(48px,9vw,130px) var(--pad); }
-    h1 { margin:0; padding-bottom:.12em; font-size:clamp(3rem,7vw,7rem); font-weight:700; letter-spacing:-.065em; line-height:1; }
-    .intro p { align-self:end; max-width:34rem; margin:0; font-size:clamp(1rem,1.5vw,1.3rem); }
-    .hero { margin:0; }
-    .hero img { width:100%; max-height:95vh; object-fit:cover; }
-    figcaption { padding:10px var(--pad) 28px; color:var(--muted); }
-    .gallery { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line); }
-    .photo { margin:0; border-bottom:1px solid var(--line); cursor:zoom-in; }
-    .photo:nth-child(odd) { border-right:1px solid var(--line); }
-    .photo img { aspect-ratio:4/3; object-fit:cover; }
-    .photo.portrait img { aspect-ratio:3/4; }
-    .photo.wide { grid-column:1/-1; border-right:0; }
-    .photo.wide img { aspect-ratio:16/9; }
-    .info { display:grid; grid-template-columns:1fr 1fr; gap:var(--pad); padding:clamp(55px,9vw,120px) var(--pad); border-bottom:1px solid var(--line); }
-    .info h2 { margin:0; font-size:inherit; font-weight:400; color:var(--muted); }
-    .info p { max-width:38rem; margin:0; font-size:clamp(1rem,1.5vw,1.3rem); }
-    .downstairs { display:grid; grid-template-columns:1fr 1fr; align-items:center; min-height:30vh; }
-    .downstairs p { margin:0; padding:var(--pad); color:var(--muted); }
-    .downstairs a { display:block; padding:var(--pad); border-left:1px solid var(--line); font-size:clamp(2rem,5vw,5rem); font-weight:700; letter-spacing:-.06em; line-height:.95; text-decoration:none; }
-    .downstairs a:hover { color:var(--bg); background:var(--ink); }
-    .lightbox { position:fixed; inset:0; z-index:10; display:none; place-items:center; padding:24px; background:rgba(0,0,0,.97); }
-    .lightbox.open { display:grid; }
-    .lightbox img { max-width:94vw; max-height:90vh; object-fit:contain; }
-    .lightbox button { position:fixed; top:10px; right:14px; width:48px; height:48px; border:0; color:white; background:transparent; font:30px Arial,sans-serif; cursor:pointer; }
-    .deploy-stamp { display:none; }
-    @media (max-width:700px) {
-      .intro,.info,.downstairs { grid-template-columns:1fr; }
-      .intro { gap:70px; }
-      h1 { font-size:clamp(3.8rem,20vw,6rem); overflow-wrap:anywhere; }
-      .gallery { grid-template-columns:1fr; }
-      .photo:nth-child(odd) { border-right:0; }
-      .photo.wide { grid-column:auto; }
-      .photo img,.photo.portrait img,.photo.wide img { height:auto; aspect-ratio:auto; }
-      .downstairs a { border-left:0; border-top:1px solid var(--line); }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>50 Archbishop Street · A Valletta Apartment</title>
+    <meta name="description" content="A furnished one-bedroom apartment in a Valletta townhouse, fifty paces from St John's Co-Cathedral. Not presently offered to let." />
+    <link rel="canonical" href="https://50archbishop.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta property="og:title" content="No. 50 Archbishop Street · Valletta" />
+    <meta property="og:description" content="A furnished one-bedroom apartment in a Valletta townhouse, fifty paces from St John's Co-Cathedral." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://50archbishop.com" />
+    <meta property="og:image" content="https://50archbishop.com/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="No. 50 Archbishop Street · Valletta" />
+    <meta name="twitter:description" content="A furnished one-bedroom apartment in a Valletta townhouse, fifty paces from St John's Co-Cathedral." />
+    <meta name="twitter:image" content="https://50archbishop.com/assets/og-image.jpg" />
+    <meta name="theme-color" content="#1a1612" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Apartment",
+          "@id": "https://50archbishop.com/#apartment",
+          "name": "No. 50 Archbishop Street",
+          "description": "A restored single floor of a Valletta townhouse: honey-coloured limestone, black timber shutters, terrazzo and marble floors. One double bedroom with a Venetian glass chandelier, a sitting room and a kitchen lounge each with a flat-screen television, a fitted bathroom, and a separate utility room with washer-dryer. Furnished, with original art throughout.",
+          "numberOfRooms": 3,
+          "numberOfBedrooms": 1,
+          "numberOfBathroomsTotal": 1,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "50 Archbishop Street",
+            "addressLocality": "Valletta",
+            "addressRegion": "Malta",
+            "addressCountry": "MT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 35.898611,
+            "longitude": 14.511944
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Furnished", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Washer and dryer", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Flat-screen televisions", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Writing desk and monitor", "value": true }
+          ],
+          "photo": [
+            "https://50archbishop.com/assets/photo-01-hero-kitchen-lounge.jpg",
+            "https://50archbishop.com/assets/photo-02-bedroom.jpg",
+            "https://50archbishop.com/assets/photo-08-courtyard.jpg"
+          ],
+          "containedInPlace": {
+            "@type": "City",
+            "name": "Valletta",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Valletta",
+              "addressCountry": "MT"
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://50archbishop.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is No. 50 Archbishop Street?",
+              "acceptedAnswer": { "@type": "Answer", "text": "A furnished one-bedroom apartment — one floor of a townhouse — fifty paces from St John's Co-Cathedral." }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it available to rent?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Not at present. Should that change, this page will say so." }
+            },
+            {
+              "@type": "Question",
+              "name": "How many bedrooms and rooms are there?",
+              "acceptedAnswer": { "@type": "Answer", "text": "One double bedroom, a sitting room, a kitchen lounge, a bathroom, and a utility room with washer-dryer." }
+            },
+            {
+              "@type": "Question",
+              "name": "Where exactly is the apartment?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. 50 Archbishop Street, Valletta — a minute from Republic Street, a short walk from the Upper Barrakka." }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get in touch?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Write using the form on the page." }
+            }
+          ]
+        }
+      ]
     }
-  </style>
-</head>
-<body>
-  <header class="top"><strong>50 Archbishop Street</strong><span>Valletta, Malta</span></header>
-  <main>
-    <section class="intro">
-      <h1>Valletta<br>House</h1>
-      <p>These are photographs of Floor 1. It has the kitchen and lounge, sitting room, bedroom, bathroom and a small courtyard.</p>
-    </section>
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231a1612'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='serif' font-size='18' fill='%23eae2d1'%3E50%3C/text%3E%3C/svg%3E" />
+    <link rel="preload" href="assets/photo-01-hero-kitchen-lounge.jpg" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ink:       #1a1612;
+        --ink-soft:  #3b332a;
+        --paper:     #eae2d1;
+        --paper-hi:  #f2ead8;
+        --paper-lo:  #d9cdb5;
+        --rule:      rgba(26, 22, 18, 0.42);
+        --oxblood:   #8b2a1c;
+        --gilt:      #a88544;
+      }
 
-    <figure class="hero"><img src="assets/photo-01-hero-kitchen-lounge.jpg" alt="The kitchen and lounge"><figcaption>The kitchen and lounge</figcaption></figure>
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      html { scroll-behavior: smooth; }
 
-    <section class="gallery" aria-label="Photographs of Floor 1">
-      <figure class="photo portrait"><img src="assets/photo-02-bedroom.jpg" alt="The bedroom" loading="lazy"><figcaption>The bedroom</figcaption></figure>
-      <figure class="photo"><img src="assets/photo-03-lounge-mirror.jpg" alt="The lounge" loading="lazy"><figcaption>The lounge</figcaption></figure>
-      <figure class="photo portrait"><img src="assets/photo-04-doorway-yellow-room.jpg" alt="The sitting room" loading="lazy"><figcaption>The sitting room</figcaption></figure>
-      <figure class="photo"><img src="assets/photo-05-bedroom-alt.jpg" alt="The bedroom from the other side" loading="lazy"><figcaption>The bedroom, from the other side</figcaption></figure>
-      <figure class="photo"><img src="assets/photo-06-bathroom.jpg" alt="The bathroom" loading="lazy"><figcaption>The bathroom</figcaption></figure>
-      <figure class="photo portrait"><img src="assets/photo-07-lounge-portrait.jpg" alt="The lounge in the evening" loading="lazy"><figcaption>The lounge in the evening</figcaption></figure>
-      <figure class="photo wide"><img src="assets/photo-08-courtyard.jpg" alt="The courtyard" loading="lazy"><figcaption>The courtyard</figcaption></figure>
-    </section>
+      body {
+        font-family: "Libre Caslon Text", Georgia, serif;
+        color: var(--ink);
+        background: var(--paper);
+        background-image:
+          radial-gradient(ellipse at 12% 8%,  rgba(139,42,28,0.04), transparent 40%),
+          radial-gradient(ellipse at 88% 94%, rgba(168,133,68,0.06), transparent 45%),
+          radial-gradient(ellipse at 50% 50%, var(--paper-hi), var(--paper) 60%, var(--paper-lo) 100%);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "liga", "kern", "onum";
+        position: relative;
+        overflow-x: hidden;
+      }
 
-    <section class="info"><h2>Floor 1</h2><p>The house is in the middle of Archbishop Street. St John’s Co-Cathedral is at the end of the street, and Republic Street is about a minute away.</p></section>
-    <nav class="downstairs"><p>The house has another floor downstairs.</p><a href="/0/">Floor 0 →</a></nav>
-  </main>
+      .sheet {
+        position: relative;
+        z-index: 2;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 40px clamp(20px, 4vw, 56px) 56px;
+      }
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Enlarged photograph"><img id="lightbox-image" alt=""><button type="button" id="lightbox-close" aria-label="Close">×</button></div>
-  <script>
-    (function(){
-      var box=document.getElementById('lightbox');var large=document.getElementById('lightbox-image');
-      function close(){box.classList.remove('open');box.setAttribute('aria-hidden','true');document.body.style.overflow=''}
-      document.querySelectorAll('.gallery img').forEach(function(image){image.addEventListener('click',function(){large.src=image.currentSrc||image.src;large.alt=image.alt;box.classList.add('open');box.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'})});
-      document.getElementById('lightbox-close').addEventListener('click',close);box.addEventListener('click',function(e){if(e.target===box)close()});document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-    })();
-  </script>
-  <span class="deploy-stamp" aria-hidden="true">2026-07-23 16:05 UTC</span>
-</body>
+      .masthead {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--ink);
+      }
+      .masthead::after {
+        content: "";
+        display: none;
+      }
+      .m-left, .m-right, .m-center {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+      .m-right { text-align: right; }
+      .m-center {
+        letter-spacing: 0.12em;
+        color: var(--ink);
+        font-weight: 500;
+        text-align: center;
+      }
+      .m-center .fanlight {
+        display: block;
+        margin: 0 auto 6px;
+        color: var(--ink);
+      }
+      .m-center .fanlight .hub { color: var(--oxblood); }
+      .hero {
+        position: relative;
+        padding: clamp(30px, 5vw, 56px) 0 clamp(40px, 6vw, 64px);
+      }
+
+      .eyebrow {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        margin: 0 0 clamp(16px, 2vw, 24px);
+      }
+
+      h1.wordmark {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-size: clamp(3rem, 10vw, 8rem);
+        line-height: 0.88;
+        letter-spacing: -0.025em;
+        margin: 0 0 clamp(36px, 5vw, 56px);
+        color: var(--ink);
+      }
+      h1.wordmark .num {
+        font-style: italic;
+        color: var(--oxblood);
+        margin-right: 0.08em;
+      }
+      h1.wordmark .street {
+        display: block;
+        font-size: 0.58em;
+        letter-spacing: -0.015em;
+        margin-top: 0.05em;
+      }
+
+      .hero-photo {
+        position: relative;
+        margin: 0;
+        border: 1px solid var(--ink);
+        background: var(--ink);
+      }
+      .hero-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        filter: saturate(0.95) contrast(1.02);
+      }
+      .hero-photo figcaption {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        padding: 10px 16px;
+        background: linear-gradient(0deg, rgba(26,22,18,0.75), transparent);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--paper);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .stamp {
+        position: absolute;
+        right: clamp(12px, 3vw, 28px);
+        bottom: clamp(12px, 3vw, 28px);
+        padding: 12px 20px 10px;
+        border: 2px solid var(--oxblood);
+        border-radius: 2px;
+        color: var(--oxblood);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: rgba(234,226,209,0.92);
+      }
+      .stamp strong {
+        font-weight: 700;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        margin-bottom: 2px;
+      }
+      .stamp span {
+        display: block;
+        max-width: 240px;
+        font-size: 9px;
+        line-height: 1.45;
+        letter-spacing: 0.08em;
+      }
+
+      .colophon {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: clamp(32px, 6vw, 80px);
+        padding: clamp(40px, 5vw, 64px) 0;
+        border-top: 1px solid var(--rule);
+      }
+
+      .prose p {
+        font-size: clamp(1.05rem, 1.4vw, 1.22rem);
+        line-height: 1.65;
+        margin: 0 0 1.2em;
+        color: var(--ink);
+        font-feature-settings: "onum", "liga";
+      }
+      .prose .sig {
+        font-style: italic;
+        color: var(--ink-soft);
+        margin-top: 1.6em;
+        font-size: 1rem;
+      }
+
+      .card {
+        border: 1px solid var(--rule);
+        padding: 28px 30px 32px;
+        background: linear-gradient(180deg, rgba(255,250,240,0.4), rgba(217,205,181,0.15));
+      }
+      .card-title {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        margin: 0 0 18px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--rule);
+      }
+      dl.meta {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px 24px;
+        align-items: baseline;
+      }
+      dl.meta dt {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+      dl.meta dd {
+        margin: 0;
+        font-size: 0.98rem;
+        color: var(--ink);
+        font-variant-numeric: oldstyle-nums;
+      }
+      dl.meta dd em {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.08em;
+      }
+
+      .diptych {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: clamp(12px, 1.6vw, 18px);
+        padding: clamp(40px, 5vw, 64px) 0;
+      }
+      .plate {
+        margin: 0;
+        border: 1px solid var(--ink);
+        background: var(--ink);
+        position: relative;
+      }
+      .plate img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        filter: saturate(0.95) contrast(1.02);
+      }
+      .plate figcaption {
+        padding: 10px 14px;
+        background: var(--paper-hi);
+        border-top: 1px solid var(--ink);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .plate figcaption .plate-no { color: var(--oxblood); font-weight: 500; }
+
+      .section-head, .nbhd-head {
+        padding: clamp(36px, 4vw, 56px) 0 clamp(20px, 2.5vw, 28px);
+        margin-bottom: clamp(24px, 3vw, 36px);
+      }
+      .section-title {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+        line-height: 1;
+        margin: 0;
+        color: var(--ink);
+        letter-spacing: -0.01em;
+      }
+      .programme {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0;
+        padding: 0 0 clamp(40px, 5vw, 56px);
+      }
+      .prog-item {
+        padding: 8px clamp(16px, 2.5vw, 32px);
+        border-left: 1px solid var(--rule);
+      }
+      .prog-item:first-child { border-left: none; padding-left: 0; }
+      .prog-item:last-child { padding-right: 0; }
+      .prog-head {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(1.25rem, 2vw, 1.55rem);
+        font-weight: 400;
+        line-height: 1.18;
+        margin: 0 0 10px;
+        color: var(--ink);
+      }
+      .prog-body {
+        font-size: 0.95rem;
+        line-height: 1.55;
+        color: var(--ink-soft);
+        margin: 0;
+      }
+
+      .neighbourhood {
+        padding-bottom: clamp(48px, 6vw, 72px);
+      }
+      .nbhd-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0;
+        border-top: 1px solid var(--rule);
+      }
+      .stop {
+        padding: clamp(20px, 2.4vw, 28px) clamp(18px, 2.4vw, 28px);
+        border-right: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+      }
+      .stop:nth-child(3n) { border-right: none; }
+      .stop:nth-last-child(-n+2) { border-bottom: none; }
+      .stop:nth-last-child(2) { border-right: 1px solid var(--rule); }
+      .stop--lead {
+        grid-column: span 2;
+        background: linear-gradient(180deg, rgba(255,250,240,0.35), rgba(217,205,181,0.08));
+      }
+      .stop-dist {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--oxblood);
+        margin: 0 0 10px;
+        line-height: 1;
+      }
+      .stop-name {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 0 0 10px;
+        color: var(--ink);
+      }
+      .stop--lead .stop-name { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
+      .stop-note {
+        font-size: 0.94rem;
+        line-height: 1.55;
+        color: var(--ink-soft);
+        margin: 0;
+      }
+      .stop-note em { font-style: italic; color: var(--ink); }
+      .stop--lead .stop-note { font-size: 1.02rem; max-width: 48ch; }
+      .stop--tail .stop-dist {
+        color: var(--ink-soft);
+        font-style: italic;
+        text-transform: none;
+        letter-spacing: 0.08em;
+        font-size: 11px;
+      }
+      .stop--tail {
+        grid-column: span 2;
+      }
+
+      footer.imprint {
+        padding-top: 28px;
+        border-top: 1px solid var(--rule);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+      footer.imprint .marks { color: var(--ink-soft); letter-spacing: 0.15em; }
+      footer.imprint a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px dotted var(--rule);
+      }
+      footer.imprint a:hover { color: var(--ink); border-bottom-color: var(--ink-soft); }
+
+      .deploy-stamp {
+        position: fixed;
+        bottom: 4px;
+        right: 6px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9px;
+        letter-spacing: 0.05em;
+        color: var(--ink-soft);
+        opacity: 0.3;
+        z-index: 10;
+        pointer-events: none;
+        user-select: none;
+      }
+
+      @media (max-width: 820px) {
+        h1.wordmark { font-size: clamp(2.8rem, 13vw, 4.8rem); }
+        .hero-photo img { aspect-ratio: 4 / 5; }
+        .colophon { grid-template-columns: 1fr; }
+        .diptych { grid-template-columns: 1fr; }
+        .programme { grid-template-columns: 1fr; }
+        .prog-item {
+          border-left: none;
+          border-top: 1px solid var(--rule);
+          padding: 24px 0;
+        }
+        .prog-item:first-child { border-top: none; padding-top: 0; }
+        .nbhd-grid { grid-template-columns: 1fr; }
+        .stop {
+          border-right: none;
+          border-bottom: 1px solid var(--rule);
+          padding: 22px 0;
+        }
+        .stop:last-child { border-bottom: none; }
+        .stop--lead { grid-column: span 1; }
+        .stop--tail { grid-column: span 1; }
+        .masthead { grid-template-columns: 1fr; text-align: center; gap: 6px; }
+        .m-right { text-align: center; }
+        .section-head, .nbhd-head {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+        .stamp {
+          right: 10px; bottom: 10px;
+          padding: 10px 14px 8px;
+          font-size: 10px;
+        }
+        .stamp strong { font-size: 12px; }
+      }
+
+      @media (min-width: 821px) and (max-width: 1040px) {
+        .nbhd-grid { grid-template-columns: 1fr 1fr; }
+        .stop:nth-child(3n) { border-right: 1px solid var(--rule); }
+        .stop:nth-child(2n) { border-right: none; }
+        .stop--lead { grid-column: span 2; }
+        .stop--tail { grid-column: span 1; }
+      }
+
+      @media print {
+        body { background: white; }
+      }
+
+
+      /* ---------- Skyline banner (letterhead) ---------- */
+      .banner {
+        margin: 0 0 clamp(16px, 2vw, 24px);
+        border-bottom: 1px solid var(--ink);
+        overflow: hidden;
+        position: relative;
+      }
+      .banner img {
+        display: block;
+        width: 100%;
+        height: clamp(120px, 16vw, 190px);
+        object-fit: cover;
+        object-position: 50% 52%;
+        filter: saturate(0.82) sepia(0.08) contrast(1.08) brightness(0.94);
+      }
+      .banner::after {
+        /* very subtle ink wash to seat the image in the paper palette */
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(26,22,18,0) 70%, rgba(26,22,18,0.12));
+        pointer-events: none;
+      }
+      .banner figcaption {
+        position: absolute;
+        bottom: 6px;
+        right: clamp(14px, 2.5vw, 28px);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--paper);
+        opacity: 0.8;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      }
+      .banner-note {
+        margin: calc(clamp(16px, 2vw, 24px) * -0.5) 0 clamp(14px, 2vw, 22px);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        text-align: right;
+      }
+      .banner-note strong {
+        font-weight: 400;
+        color: var(--ink);
+      }
+      @media (max-width: 640px) {
+        .banner img { height: 110px; }
+        .banner-note {
+          margin-top: -12px;
+          text-align: left;
+          line-height: 1.6;
+        }
+      }
+
+      /* ---------- Lightbox ---------- */
+      .plate img, .hero-photo img { cursor: zoom-in; }
+
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(20, 16, 12, 0.94);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(20px, 4vw, 60px);
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.35s ease;
+        cursor: zoom-out;
+      }
+      .lightbox.is-open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .lightbox-frame {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        animation: lb-in 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      @keyframes lb-in {
+        from { opacity: 0; transform: scale(0.96); }
+        to   { opacity: 1; transform: scale(1); }
+      }
+      .lightbox img {
+        display: block;
+        max-width: 100%;
+        max-height: calc(100vh - 160px);
+        width: auto;
+        height: auto;
+        border: 1px solid var(--paper-lo);
+        background: var(--ink);
+        box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+      }
+      .lightbox-cap {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--paper);
+        opacity: 0.75;
+      }
+      .lightbox-close {
+        position: absolute;
+        top: 14px; right: 14px;
+        width: 44px; height: 44px;
+        background: transparent;
+        border: 1px solid var(--paper-lo);
+        color: var(--paper);
+        font-size: 20px;
+        line-height: 1;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: background-color 0.2s ease;
+      }
+      .lightbox-close:hover { background: rgba(234,226,209,0.15); }
+      .lightbox-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px; height: 48px;
+        background: transparent;
+        border: 1px solid var(--paper-lo);
+        color: var(--paper);
+        font-family: "DM Serif Display", serif;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: background-color 0.2s ease;
+      }
+      .lightbox-nav:hover { background: rgba(234,226,209,0.15); }
+      .lightbox-prev { left: clamp(12px, 3vw, 40px); }
+      .lightbox-next { right: clamp(12px, 3vw, 40px); }
+
+      @media (max-width: 640px) {
+        .lightbox-nav { display: none; }
+      }
+
+      /* ---------- Enquiries answered (FAQ) ---------- */
+      .faq { padding-bottom: clamp(40px, 5vw, 64px); }
+      .faq-list {
+        display: grid;
+        gap: clamp(20px, 2.6vw, 30px);
+        border-top: 1px solid var(--rule);
+        padding-top: clamp(24px, 3vw, 36px);
+      }
+      .faq-item { display: grid; gap: 8px; }
+      .faq-q {
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+        line-height: 1.2;
+        margin: 0;
+        color: var(--ink);
+      }
+      .faq-a {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--ink-soft);
+        margin: 0;
+        max-width: 64ch;
+      }
+      .stop-note a, .faq-a a {
+        color: var(--oxblood);
+        text-decoration: none;
+        border-bottom: 1px solid var(--rule);
+        transition: border-color 0.2s ease;
+      }
+      .stop-note a:hover, .faq-a a:hover { border-bottom-color: var(--oxblood); }
+      .stop-name a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid var(--rule);
+        transition: border-color 0.2s ease;
+      }
+      .stop-name a:hover { border-bottom-color: var(--oxblood); }
+
+      /* ---------- Contact form ---------- */
+      .contact-form-section {
+        padding: clamp(40px, 5vw, 64px) 0;
+      }
+      .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 680px;
+      }
+      .contact-form label {
+        display: block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        margin-bottom: 8px;
+      }
+      .contact-form .field { display: flex; flex-direction: column; }
+      .contact-form .field--full { grid-column: 1 / -1; }
+      .contact-form input,
+      .contact-form textarea {
+        font-family: "Libre Caslon Text", Georgia, serif;
+        font-size: 1rem;
+        color: var(--ink);
+        background: rgba(255, 250, 240, 0.4);
+        border: 1px solid var(--rule);
+        padding: 12px 14px;
+        border-radius: 0;
+        resize: vertical;
+        transition: border-color 0.2s ease, background-color 0.2s ease;
+      }
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: var(--ink);
+        background: var(--paper-hi);
+      }
+      .contact-form textarea { min-height: 140px; }
+      .contact-form button {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--paper-hi);
+        background: var(--ink);
+        border: 1px solid var(--ink);
+        padding: 16px 28px;
+        cursor: pointer;
+        transition: background-color 0.25s ease, color 0.25s ease;
+        justify-self: start;
+      }
+      .contact-form button:hover {
+        background: var(--oxblood);
+        border-color: var(--oxblood);
+      }
+      .form-status {
+        grid-column: 1 / -1;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        min-height: 1.2em;
+      }
+      .form-status.is-success { color: var(--oxblood); }
+      .form-status.is-error { color: var(--oxblood); font-weight: 500; }
+
+      @media (max-width: 640px) {
+        .contact-form { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sheet">
+
+      <figure class="banner" aria-hidden="true">
+        <img src="assets/banner-valletta-skyline-cropped.jpg" alt="The Valletta skyline with the Carmelite dome and St Paul's Anglican Pro-Cathedral spire above the rooftops." loading="eager" decoding="async" />
+        <figcaption>Valletta skyline · from Archbishop Street</figcaption>
+      </figure>
+      <p class="banner-note">Photographed from the rooftop lounge next door · The Capital Boutique Hotel</p>
+
+      <header class="masthead">
+        <div class="m-left">Valletta · Malta</div>
+        <div class="m-center">
+          <svg class="fanlight" width="62" height="32" viewBox="0 0 64 34" fill="none" aria-hidden="true">
+            <path d="M4 32 A28 28 0 0 1 60 32" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M10 32 A22 22 0 0 1 54 32" stroke="currentColor" stroke-width="1"/>
+            <path d="M32 32 L32 10 M32 32 L21 13 M32 32 L43 13 M32 32 L13.4 20.6 M32 32 L50.6 20.6" stroke="currentColor" stroke-width="1"/>
+            <path class="hub" d="M26 32 A6 6 0 0 1 38 32" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M2 32 L62 32" stroke="currentColor" stroke-width="1.4"/>
+          </svg>
+          50 Archbishop
+        </div>
+        <div class="m-right">Floor 1</div>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">A Valletta apartment</p>
+
+        <h1 class="wordmark">
+          <span class="num">50</span>Archbishop
+          <span class="street">Street, Valletta.</span>
+        </h1>
+
+        <figure class="hero-photo">
+          <img
+            src="assets/photo-01-hero-kitchen-lounge.jpg"
+            alt="The lounge and kitchen at No. 50: limestone walls, pendant lamps, a long cream sofa, kitchen counter, and a large painting."
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption>
+            <span>Plate 1 · The Lounge</span>
+            <span>2026</span>
+          </figcaption>
+          <div class="stamp" aria-label="Not yet available">
+            <strong>Not Yet Available</strong>
+            <span>enquiries in due course</span>
+          </div>
+        </figure>
+      </section>
+
+      <section class="colophon">
+        <div class="prose">
+          <p>
+            A floor of a Valletta townhouse, fifty paces from St John’s Co-Cathedral. Honey-coloured limestone, black shutters, terrazzo and marble.
+          </p>
+          <p>
+            Furnished and hung with original art: a kitchen lounge, a sitting room, a bedroom under a Venetian chandelier. Lived in, not staged — and quiet, by the measure of Valletta streets.
+          </p>
+          <p class="sig">— The Owner.</p>
+        </div>
+
+        <aside class="card" aria-labelledby="card-title">
+          <h2 class="card-title" id="card-title">Particulars</h2>
+          <dl class="meta">
+            <dt>Address</dt><dd>No. 50 Archbishop Street</dd>
+            <dt>City</dt><dd>Il-Belt Valletta</dd>
+            <dt>Island</dt><dd>Malta</dd>
+            <dt>Layout</dt><dd>Main floor: lounge, kitchen, sitting room, bedroom, utility room with washer and dryer.</dd>
+            <dt>Nearest</dt><dd>St John’s Co-Cathedral</dd>
+            <dt>Fabric</dt><dd>Limestone, terrazzo, timber</dd>
+            <dt>Furnished</dt><dd>Yes</dd>
+            <dt>Viewings</dt><dd>By appointment</dd>
+            <dt>Status</dt><dd><em>Not yet available</em></dd>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="diptych" aria-label="Interior plates">
+        <figure class="plate">
+          <img
+            src="assets/photo-02-bedroom.jpg"
+            alt="A bedroom with dark wood ceiling beams, half-limestone half-charcoal walls, a Venetian glass chandelier, gallery wall of small framed works, and a window bench set into a thick wall embrasure."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 2</span>
+            <span>The Bedroom</span>
+          </figcaption>
+        </figure>
+        <figure class="plate">
+          <img
+            src="assets/photo-03-lounge-mirror.jpg"
+            alt="The main lounge in wide view: tall mirror, cream sofa with mustard throw, dining table and pendant lamps, terrazzo floor."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 3</span>
+            <span>The Lounge</span>
+          </figcaption>
+        </figure>
+        <figure class="plate">
+          <img
+            src="assets/photo-04-doorway-yellow-room.jpg"
+            alt="Looking through tall black doors into the yellow sitting room beyond, leather ottoman and stacked books in the foreground."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 4</span>
+            <span>Through the Doors</span>
+          </figcaption>
+        </figure>
+        <figure class="plate">
+          <img
+            src="assets/photo-05-bedroom-alt.jpg"
+            alt="The bedroom seen from the opposite corner: chandelier, dark beamed ceiling, leather reading chair and red rug beside the bed."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 5</span>
+            <span>The Bedroom, from the Door</span>
+          </figcaption>
+        </figure>
+        <figure class="plate">
+          <img
+            src="assets/photo-06-bathroom.jpg"
+            alt="A bathroom with dark blue-green tile walls, a freestanding tub, a round mirror, and white brick-pattern tile."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 6</span>
+            <span>The Bath</span>
+          </figcaption>
+        </figure>
+        <figure class="plate">
+          <img
+            src="assets/photo-07-lounge-portrait.jpg"
+            alt="The lounge in portrait view: chandelier, sofa, and the fish painting above."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 7</span>
+            <span>The Lounge, Evening</span>
+          </figcaption>
+        </figure>
+        <figure class="plate">
+          <img
+            src="assets/photo-08-courtyard.jpg"
+            alt="A small glass-floored courtyard terrace at dusk, set into a limestone light-well: a round bistro table and two woven chairs, potted plants and hanging flower baskets, a tall black-framed window glowing warm from within, and an open door beneath an ornate wrought-iron fanlight."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span class="plate-no">Plate 8</span>
+            <span>The Courtyard, at Dusk</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="programme-wrap" aria-labelledby="prog-title">
+        <header class="section-head">
+          <h2 id="prog-title" class="section-title">The Particulars</h2>
+        </header>
+
+        <div class="programme">
+          <article class="prog-item">
+            <h3 class="prog-head">The Accommodation</h3>
+            <p class="prog-body">One double bedroom, a sitting room and kitchen lounge, a fitted bathroom, a utility room with washer-dryer, a writing desk by the entry. Furnished, with original art throughout.</p>
+          </article>
+          <article class="prog-item">
+            <h3 class="prog-head">The Position</h3>
+            <p class="prog-body">Not presently offered to let. Enquiries may be registered; should that change, this page will say so first.</p>
+          </article>
+          <article class="prog-item">
+            <h3 class="prog-head">The Setting</h3>
+            <p class="prog-body">The centre of Archbishop Street — quiet by Valletta measure, a short walk to everything the Belt offers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="neighbourhood" aria-labelledby="nbhd-title">
+        <header class="nbhd-head">
+          <h2 id="nbhd-title" class="section-title">The Neighbourhood</h2>
+        </header>
+
+        <div class="nbhd-grid">
+          <article class="stop stop--lead">
+            <p class="stop-dist">50 paces</p>
+            <h3 class="stop-name"><a href="https://www.stjohnscocathedral.com/" target="_blank" rel="noopener">St John’s Co-Cathedral</a></h3>
+            <p class="stop-note">
+              Austere without, sumptuous within. The Oratory holds Caravaggio’s <em>Beheading of St John</em> — the only work he ever signed.
+            </p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">1 min</p>
+            <h3 class="stop-name">Republic Street</h3>
+            <p class="stop-note">The spine of the city, running gate to fort.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">2 min</p>
+            <h3 class="stop-name">Grand Master’s Palace</h3>
+            <p class="stop-note">The Tapestry Chamber, the Armoury, rooms of Preti ceilings.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">3 min</p>
+            <h3 class="stop-name">Casa Rocca Piccola</h3>
+            <p class="stop-note">A sixteenth-century palazzo, still lived in by the Marquis de Piro.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">4 min</p>
+            <h3 class="stop-name"><a href="https://teatrumanoel.mt/" target="_blank" rel="noopener">Teatru Manoel</a></h3>
+            <p class="stop-note">Europe’s third-oldest working theatre, opened 1732.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">5 min</p>
+            <h3 class="stop-name"><a href="https://heritagemalta.mt/" target="_blank" rel="noopener">MUŻA · Auberge d’Italie</a></h3>
+            <p class="stop-note">Malta’s national collection of fine art, in the old Italian Knights’ auberge.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">6 min</p>
+            <h3 class="stop-name">Upper Barrakka Gardens</h3>
+            <p class="stop-note">High over the Grand Harbour. The Saluting Battery fires at noon and four.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">7 min walk</p>
+            <h3 class="stop-name">Fast Ferry to Gozo</h3>
+            <p class="stop-note">Gozo within easy reach, straight from the Valletta landing.</p>
+          </article>
+          <article class="stop">
+            <p class="stop-dist">7 min</p>
+            <h3 class="stop-name">Lascaris War Rooms</h3>
+            <p class="stop-note">The underground command post that ran the defence of Malta.</p>
+          </article>
+          <article class="stop stop--tail">
+            <p class="stop-dist">around the corner</p>
+            <h3 class="stop-name">Sailors Paradise</h3>
+            <p class="stop-note">The neighbourhood bar. First and last stop of most evenings.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <header class="nbhd-head">
+          <h2 id="faq-title" class="section-title">Enquiries, Answered</h2>
+        </header>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="faq-q">What is No. 50 Archbishop Street?</h3>
+            <p class="faq-a">A furnished one-bedroom apartment — one floor of a townhouse — fifty paces from <a href="https://www.stjohnscocathedral.com/" target="_blank" rel="noopener">St John's Co-Cathedral</a>.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Is it available to rent?</h3>
+            <p class="faq-a">Not at present. Should that change, this page will say so.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">How many bedrooms and rooms are there?</h3>
+            <p class="faq-a">One double bedroom, a sitting room, a kitchen lounge, a bathroom, and a utility room with washer-dryer.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Where exactly is the apartment?</h3>
+            <p class="faq-a">No. 50 Archbishop Street, Valletta — a minute from Republic Street, a short walk from the Upper Barrakka.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">How do I get in touch?</h3>
+            <p class="faq-a">Write using the form below.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form-section" id="contact-form" aria-labelledby="contact-form-title">
+        <header class="section-head">
+          <h2 id="contact-form-title" class="section-title">Correspondence</h2>
+        </header>
+
+        <form class="contact-form" id="enquiry-form" method="POST" action="https://formspree.io/f/mbdqyrra" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field field--full">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="Enquiry via 50archbishop.com" />
+          <button type="submit">Send</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <footer class="imprint">
+        <div>50 Archbishop Street · Valletta · Malta · <a href="/0/">Flat 0</a></div>
+        <div class="marks">·&nbsp;&nbsp;·&nbsp;&nbsp;·</div>
+        <div>Set in Caslon &amp; DM Serif · <span id="colophon-year">2026</span></div>
+      </footer>
+
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph, enlarged" aria-hidden="true">
+      <div class="lightbox-frame">
+        <img id="lightbox-img" src="" alt="" />
+        <div class="lightbox-cap" id="lightbox-cap"></div>
+      </div>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photograph">‹</button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photograph">›</button>
+    </div>
+
+    <script>
+      (function() {
+        // --- Colophon year ---
+        var yearEl = document.getElementById('colophon-year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // --- Lightbox ---
+        var photos = Array.prototype.slice.call(
+          document.querySelectorAll('.hero-photo img, .plate img')
+        );
+        var lb = document.getElementById('lightbox');
+        var lbImg = document.getElementById('lightbox-img');
+        var lbCap = document.getElementById('lightbox-cap');
+        var lbClose = document.getElementById('lightbox-close');
+        var lbPrev = document.getElementById('lightbox-prev');
+        var lbNext = document.getElementById('lightbox-next');
+        var idx = 0;
+
+        function captionFor(img) {
+          var fig = img.closest('figure');
+          if (!fig) return '';
+          var cap = fig.querySelector('figcaption');
+          if (!cap) return '';
+          return cap.textContent.trim().replace(/\s+/g, ' · ');
+        }
+
+        function openAt(i) {
+          idx = (i + photos.length) % photos.length;
+          var img = photos[idx];
+          lbImg.src = img.currentSrc || img.src;
+          lbImg.alt = img.alt || '';
+          lbCap.textContent = captionFor(img);
+          lb.classList.add('is-open');
+          lb.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+        function close() {
+          lb.classList.remove('is-open');
+          lb.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+
+        photos.forEach(function(img, i) {
+          img.addEventListener('click', function() { openAt(i); });
+        });
+        lbClose.addEventListener('click', close);
+        lbPrev.addEventListener('click', function(e) { e.stopPropagation(); openAt(idx - 1); });
+        lbNext.addEventListener('click', function(e) { e.stopPropagation(); openAt(idx + 1); });
+        lb.addEventListener('click', function(e) {
+          if (e.target === lb) close();
+        });
+        document.addEventListener('keydown', function(e) {
+          if (!lb.classList.contains('is-open')) return;
+          if (e.key === 'Escape') close();
+          else if (e.key === 'ArrowLeft') openAt(idx - 1);
+          else if (e.key === 'ArrowRight') openAt(idx + 1);
+        });
+
+        // --- Touch swipe for mobile lightbox navigation ---
+        var touchStartX = 0;
+        lb.addEventListener('touchstart', function(e) {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        lb.addEventListener('touchend', function(e) {
+          var diff = e.changedTouches[0].screenX - touchStartX;
+          if (Math.abs(diff) > 50) {
+            e.stopPropagation();
+            openAt(idx + (diff < 0 ? 1 : -1));
+          }
+        }, { passive: true });
+
+        // --- Contact form (progressive enhancement) ---
+        var form = document.getElementById('enquiry-form');
+        var status = document.getElementById('form-status');
+        if (!form) return;
+
+        form.addEventListener('submit', function(e) {
+          // If no action URL set yet, stop and show a polite message.
+          if (!form.action || form.action === window.location.href) {
+            e.preventDefault();
+            status.textContent = 'The letterbox is being fitted. Please check back shortly.';
+            status.className = 'form-status';
+            return;
+          }
+
+          // Otherwise, submit via fetch for a nicer UX.
+          e.preventDefault();
+          status.textContent = 'Sending…';
+          status.className = 'form-status';
+
+          var data = new FormData(form);
+          fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          }).then(function(r) {
+            if (r.ok) {
+              form.reset();
+              status.textContent = 'Thank you — sent.';
+              status.className = 'form-status is-success';
+            } else {
+              return r.json().then(function(j) {
+                throw new Error((j && j.error) || 'Send failed.');
+              }).catch(function() {
+                throw new Error('Send failed.');
+              });
+            }
+          }).catch(function(err) {
+            status.textContent = 'Something went wrong — please try again.';
+            status.className = 'form-status is-error';
+          });
+        });
+      })();
+    </script>
+    <span class="deploy-stamp" aria-hidden="true">2026-07-19 09:31 UTC</span>
+  </body>
 </html>
