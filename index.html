@@ -2,66 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>50 Archbishop Street · Valletta</title>
-  <meta name="description" content="A furnished one-bedroom apartment in a Valletta townhouse, fifty paces from St John's Co-Cathedral. Not available to rent at present." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>50 Archbishop Street</title>
+  <meta name="description" content="Photographs of 50 Archbishop Street in Valletta." />
   <link rel="canonical" href="https://50archbishop.com/" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <meta property="og:title" content="50 Archbishop Street · Valletta" />
-  <meta property="og:description" content="One floor of a Valletta townhouse, fifty paces from St John's Co-Cathedral." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:title" content="50 Archbishop Street" />
+  <meta property="og:description" content="Photographs of the house in Valletta." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://50archbishop.com/" />
   <meta property="og:image" content="https://50archbishop.com/assets/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="50 Archbishop Street · Valletta" />
-  <meta name="twitter:description" content="One floor of a Valletta townhouse, fifty paces from St John's Co-Cathedral." />
   <meta name="twitter:image" content="https://50archbishop.com/assets/og-image.jpg" />
-  <meta name="theme-color" content="#eee9df" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Apartment",
-    "@id": "https://50archbishop.com/#apartment",
-    "name": "50 Archbishop Street",
-    "description": "A furnished one-bedroom apartment on one floor of a Valletta townhouse, fifty paces from St John's Co-Cathedral.",
-    "numberOfRooms": 3,
-    "numberOfBedrooms": 1,
-    "numberOfBathroomsTotal": 1,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "50 Archbishop Street",
-      "addressLocality": "Valletta",
-      "addressCountry": "MT"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 35.898611,
-      "longitude": 14.511944
-    },
-    "photo": [
-      "https://50archbishop.com/assets/photo-01-hero-kitchen-lounge.jpg",
-      "https://50archbishop.com/assets/photo-02-bedroom.jpg",
-      "https://50archbishop.com/assets/photo-08-courtyard.jpg"
-    ]
-  }
-  </script>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1916'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='serif' font-size='18' fill='%23eee9df'%3E50%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#f4f3ef" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial' font-size='16' fill='white'%3E50%3C/text%3E%3C/svg%3E" />
   <link rel="preload" href="assets/photo-01-hero-kitchen-lounge.jpg" as="image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --paper: #eee9df;
-      --paper-deep: #ddd5c7;
-      --ink: #1b1916;
-      --muted: #686057;
-      --red: #8c2f21;
-      --line: rgba(27, 25, 22, 0.22);
-      --serif: "Libre Caslon Text", Georgia, serif;
-      --sans: "Inter", Helvetica, Arial, sans-serif;
+      --bg: #f4f3ef;
+      --ink: #111;
+      --muted: #73716c;
+      --line: #c9c7c1;
+      --pad: clamp(16px, 2.2vw, 34px);
+      --sans: Arial, Helvetica, sans-serif;
     }
 
     * { box-sizing: border-box; }
@@ -69,450 +32,268 @@
     body {
       margin: 0;
       color: var(--ink);
-      background: var(--paper);
-      font-family: var(--serif);
+      background: var(--bg);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.35;
       -webkit-font-smoothing: antialiased;
     }
-    a { color: inherit; text-underline-offset: 0.18em; }
     img { display: block; width: 100%; }
-    button, input, textarea { font: inherit; }
-    .wrap { width: min(100% - 40px, 1240px); margin-inline: auto; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
-    .site-head {
-      min-height: 96px;
+    .header {
+      position: relative;
+      z-index: 2;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
-      align-items: center;
+      align-items: baseline;
+      gap: 24px;
+      padding: 18px var(--pad);
       border-bottom: 1px solid var(--line);
-      font-family: var(--sans);
-      font-size: 12px;
     }
-    .site-head .address { font-weight: 500; }
-    .site-head .place { text-align: right; color: var(--muted); }
-    .fanlight { width: 54px; height: auto; color: var(--ink); }
-    .fanlight .hub { color: var(--red); }
+    .header strong { font-weight: 700; }
+    .header .middle { color: var(--muted); text-align: center; }
+    .header .right { text-align: right; }
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
-      gap: clamp(28px, 6vw, 96px);
-      align-items: end;
-      padding: clamp(52px, 8vw, 120px) 0 clamp(72px, 10vw, 144px);
+      grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+      min-height: calc(100vh - 55px);
+      border-bottom: 1px solid var(--line);
     }
-    .hero-copy { padding-bottom: clamp(8px, 3vw, 40px); }
-    .kicker {
-      margin: 0 0 24px;
-      color: var(--red);
-      font-family: var(--sans);
-      font-size: 12px;
-      font-weight: 500;
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: var(--pad);
+      border-right: 1px solid var(--line);
     }
     h1 {
+      max-width: 8ch;
       margin: 0;
-      font-size: clamp(4.2rem, 10vw, 9.5rem);
-      font-weight: 400;
-      letter-spacing: -0.075em;
-      line-height: 0.76;
+      font-size: clamp(3.2rem, 7.5vw, 8.2rem);
+      font-weight: 700;
+      letter-spacing: -0.07em;
+      line-height: 0.82;
     }
-    h1 span { display: block; }
-    h1 .street {
-      margin-top: 0.38em;
-      font-size: 0.34em;
-      letter-spacing: -0.035em;
-      line-height: 1.05;
-    }
-    .availability {
-      max-width: 25rem;
-      margin: clamp(42px, 7vw, 90px) 0 0;
-      font-size: clamp(1.12rem, 1.55vw, 1.35rem);
-      line-height: 1.55;
-    }
-    .availability strong { font-weight: 400; color: var(--red); }
-    .hero-image { margin: 0; }
-    .hero-image img { aspect-ratio: 4 / 5; object-fit: cover; }
-    .caption {
-      margin-top: 10px;
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 11px;
+    .intro {
+      max-width: 31rem;
+      margin: 80px 0 0;
+      font-size: clamp(1rem, 1.4vw, 1.3rem);
       line-height: 1.4;
     }
+    .hero-photo { margin: 0; padding: var(--pad); }
+    .hero-photo img { width: 100%; height: calc(100vh - 55px - (var(--pad) * 2)); object-fit: cover; }
 
-    .intro {
+    .section-title {
       display: grid;
-      grid-template-columns: 0.55fr 1fr;
-      gap: clamp(28px, 9vw, 160px);
-      align-items: start;
-      padding: clamp(64px, 9vw, 130px) 0;
-      border-top: 1px solid var(--line);
-    }
-    .intro-label, .section-label {
-      margin: 0;
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 12px;
-    }
-    .intro-copy { max-width: 43rem; }
-    .intro-copy p {
-      margin: 0 0 1.2em;
-      font-size: clamp(1.35rem, 2.5vw, 2.45rem);
-      line-height: 1.32;
-      letter-spacing: -0.02em;
-    }
-    .intro-copy p:last-child { margin-bottom: 0; }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: clamp(12px, 2vw, 28px);
-      padding-bottom: clamp(80px, 12vw, 170px);
-    }
-    .shot { margin: 0; cursor: zoom-in; }
-    .shot img { height: 100%; object-fit: cover; }
-    .shot:nth-child(1) { grid-column: 1 / span 7; }
-    .shot:nth-child(1) img { aspect-ratio: 4 / 3; }
-    .shot:nth-child(2) { grid-column: 8 / -1; margin-top: 18%; }
-    .shot:nth-child(2) img { aspect-ratio: 3 / 4; }
-    .shot:nth-child(3) { grid-column: 2 / span 4; margin-top: 8%; }
-    .shot:nth-child(3) img { aspect-ratio: 3 / 4; }
-    .shot:nth-child(4) { grid-column: 7 / -1; }
-    .shot:nth-child(4) img { aspect-ratio: 5 / 4; }
-    .shot:nth-child(5) { grid-column: 1 / span 6; }
-    .shot:nth-child(5) img { aspect-ratio: 4 / 3; }
-    .shot:nth-child(6) { grid-column: 8 / -1; margin-top: 16%; }
-    .shot:nth-child(6) img { aspect-ratio: 3 / 4; }
-    .shot:nth-child(7) { grid-column: 3 / span 8; margin-top: 4%; }
-    .shot:nth-child(7) img { aspect-ratio: 16 / 10; }
-
-    .facts {
-      background: var(--ink);
-      color: var(--paper);
-      padding: clamp(72px, 10vw, 136px) 0;
-    }
-    .facts-grid {
-      display: grid;
-      grid-template-columns: 0.55fr 1fr;
-      gap: clamp(28px, 9vw, 160px);
-    }
-    .facts .section-label { color: #a9a198; }
-    .fact-list { margin: 0; }
-    .fact {
-      display: grid;
-      grid-template-columns: minmax(120px, 0.38fr) 1fr;
-      gap: 24px;
-      padding: 20px 0;
-      border-top: 1px solid rgba(238, 233, 223, 0.22);
-    }
-    .fact:last-child { border-bottom: 1px solid rgba(238, 233, 223, 0.22); }
-    .fact dt { color: #a9a198; font-family: var(--sans); font-size: 12px; }
-    .fact dd { margin: 0; font-size: clamp(1rem, 1.45vw, 1.25rem); line-height: 1.45; }
-    .floor-zero-link {
-      display: inline-block;
-      margin-top: 44px;
-      color: var(--paper);
-      font-size: clamp(1.3rem, 2vw, 1.8rem);
-      text-decoration-thickness: 1px;
-    }
-
-    .nearby { padding: clamp(80px, 11vw, 150px) 0; }
-    .nearby-head {
-      display: grid;
-      grid-template-columns: 0.55fr 1fr;
-      gap: clamp(28px, 9vw, 160px);
-      margin-bottom: clamp(50px, 7vw, 92px);
-    }
-    .nearby h2, .contact h2 {
-      margin: 0;
-      font-size: clamp(2.5rem, 6vw, 5.5rem);
-      font-weight: 400;
-      letter-spacing: -0.055em;
-      line-height: 0.95;
-    }
-    .places { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
-    .place-card { padding: 22px 24px 0 0; border-top: 1px solid var(--line); }
-    .place-card + .place-card { padding-left: 24px; border-left: 1px solid var(--line); }
-    .distance { margin: 0 0 24px; color: var(--red); font-family: var(--sans); font-size: 12px; }
-    .place-card h3 { margin: 0 0 12px; font-size: 1.2rem; font-weight: 400; }
-    .place-card p:last-child { margin: 0; color: var(--muted); font-size: 0.96rem; line-height: 1.55; }
-
-    .contact { padding: clamp(80px, 11vw, 150px) 0; border-top: 1px solid var(--line); }
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 0.55fr 1fr;
-      gap: clamp(48px, 9vw, 160px);
-    }
-    .contact-note { max-width: 27rem; margin: 28px 0 0; color: var(--muted); line-height: 1.6; }
-    .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 30px 24px; }
-    .field { display: grid; gap: 8px; }
-    .field-wide { grid-column: 1 / -1; }
-    label { color: var(--muted); font-family: var(--sans); font-size: 11px; }
-    input, textarea {
-      width: 100%;
-      border: 0;
+      grid-template-columns: 1fr 2fr;
+      padding: 18px var(--pad);
       border-bottom: 1px solid var(--line);
-      border-radius: 0;
-      padding: 10px 0 14px;
-      color: var(--ink);
-      background: transparent;
-      outline: none;
-      font-size: 1rem;
+      font-weight: 400;
     }
-    input:focus, textarea:focus { border-bottom-color: var(--ink); }
-    textarea { min-height: 110px; resize: vertical; }
-    .send-row { grid-column: 1 / -1; display: flex; align-items: center; gap: 22px; }
-    button {
-      border: 1px solid var(--ink);
-      padding: 13px 28px;
-      color: var(--paper);
-      background: var(--ink);
-      cursor: pointer;
-      font-family: var(--sans);
-      font-size: 12px;
+    .section-title span:last-child { color: var(--muted); }
+
+    .photos { border-bottom: 1px solid var(--line); }
+    .row { display: grid; border-bottom: 1px solid var(--line); }
+    .row:last-child { border-bottom: 0; }
+    .row.two { grid-template-columns: 1fr 1fr; }
+    .row.split { grid-template-columns: 0.78fr 1.22fr; }
+    .photo {
+      margin: 0;
+      padding: var(--pad);
+      cursor: zoom-in;
     }
-    button:hover { color: var(--ink); background: transparent; }
-    .form-status { margin: 0; color: var(--muted); font-size: 0.92rem; }
-    .form-status.is-error { color: var(--red); }
+    .photo + .photo { border-left: 1px solid var(--line); }
+    .photo img { height: min(70vw, 760px); object-fit: cover; }
+    .row.two .photo img { height: min(52vw, 700px); }
+    .row.split .photo:first-child img { height: min(57vw, 760px); }
+    .row.split .photo:last-child img { height: min(57vw, 760px); }
+    figcaption { margin-top: 9px; color: var(--muted); }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      border-bottom: 1px solid var(--line);
+    }
+    .details > h2 {
+      margin: 0;
+      padding: var(--pad);
+      border-right: 1px solid var(--line);
+      font-size: inherit;
+      font-weight: 400;
+    }
+    .detail-list { margin: 0; }
+    .detail {
+      display: grid;
+      grid-template-columns: minmax(110px, 0.35fr) 1fr;
+      gap: 20px;
+      padding: 17px var(--pad);
+      border-bottom: 1px solid var(--line);
+    }
+    .detail:last-child { border-bottom: 0; }
+    .detail dt { color: var(--muted); }
+    .detail dd { margin: 0; }
+
+    .floor-zero {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      min-height: 28vh;
+      border-bottom: 1px solid var(--line);
+    }
+    .floor-zero p { margin: 0; padding: var(--pad); }
+    .floor-zero a {
+      display: block;
+      padding: var(--pad);
+      border-left: 1px solid var(--line);
+      font-size: clamp(2rem, 6vw, 6rem);
+      font-weight: 700;
+      letter-spacing: -0.06em;
+      line-height: 0.95;
+      text-decoration: none;
+    }
+    .floor-zero a:hover { background: var(--ink); color: var(--bg); }
 
     .footer {
       display: flex;
       justify-content: space-between;
       gap: 24px;
-      padding: 28px 0 42px;
-      border-top: 1px solid var(--line);
+      padding: 18px var(--pad) 34px;
       color: var(--muted);
-      font-family: var(--sans);
-      font-size: 11px;
     }
 
     .lightbox {
       position: fixed;
       inset: 0;
-      z-index: 20;
+      z-index: 10;
       display: none;
       place-items: center;
-      padding: 28px;
-      background: rgba(15, 14, 12, 0.96);
+      padding: 24px;
+      background: rgba(0,0,0,0.96);
     }
-    .lightbox.is-open { display: grid; }
-    .lightbox img { max-width: min(92vw, 1500px); max-height: 84vh; object-fit: contain; }
+    .lightbox.open { display: grid; }
+    .lightbox img { max-width: 94vw; max-height: 90vh; object-fit: contain; }
     .lightbox button {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      right: 14px;
+      width: 44px;
+      height: 44px;
       border: 0;
-      padding: 8px 12px;
       color: white;
       background: transparent;
-      font-size: 28px;
+      font: 28px/1 var(--sans);
+      cursor: pointer;
     }
-    .lightbox button:hover { color: white; }
+    .deploy-stamp { display: none; }
 
-    .deploy-stamp { position: fixed; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-
-    @media (max-width: 780px) {
-      .wrap { width: min(100% - 28px, 1240px); }
-      .site-head { min-height: 76px; grid-template-columns: 1fr auto; }
-      .site-head .place { display: none; }
-      .fanlight { width: 46px; }
-      .hero { grid-template-columns: 1fr; padding-top: 48px; }
-      .hero-copy { display: contents; }
-      h1 { font-size: clamp(4.4rem, 25vw, 7rem); }
-      .availability { margin: 0 0 16px; order: 3; }
-      .hero-image { margin-top: 18px; }
-      .intro, .facts-grid, .nearby-head, .contact-layout { grid-template-columns: 1fr; gap: 28px; }
-      .gallery { gap: 10px; }
-      .shot:nth-child(n) { margin-top: 0; }
-      .places { grid-template-columns: 1fr 1fr; }
-      .place-card:nth-child(3) { border-left: 0; padding-left: 0; }
-      .place-card:nth-child(n+3) { margin-top: 36px; }
-      .fact { grid-template-columns: 105px 1fr; }
-    }
-
-    @media (max-width: 520px) {
-      .gallery { display: block; }
-      .shot { margin-bottom: 12px !important; }
-      .shot img { aspect-ratio: auto !important; }
-      .caption { margin: 7px 0 22px; }
-      .places { grid-template-columns: 1fr; }
-      .place-card + .place-card { margin-top: 34px; padding-left: 0; border-left: 0; }
-      .contact-form { grid-template-columns: 1fr; }
-      .field-wide, .send-row { grid-column: 1; }
+    @media (max-width: 720px) {
+      .header { grid-template-columns: 1fr auto; }
+      .header .middle { display: none; }
+      .hero { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+      .hero-text { min-height: 52vh; border-right: 0; border-bottom: 1px solid var(--line); }
+      h1 { font-size: clamp(4.1rem, 21vw, 6.5rem); overflow-wrap: anywhere; }
+      .intro { margin-top: 70px; }
+      .hero-photo img { height: auto; }
+      .section-title, .details, .floor-zero { grid-template-columns: 1fr; }
+      .section-title { gap: 5px; }
+      .row.two, .row.split { grid-template-columns: 1fr; }
+      .photo + .photo { border-left: 0; border-top: 1px solid var(--line); }
+      .row .photo img, .row.two .photo img, .row.split .photo:first-child img, .row.split .photo:last-child img { height: auto; }
+      .details > h2 { border-right: 0; border-bottom: 1px solid var(--line); }
+      .floor-zero { min-height: auto; }
+      .floor-zero a { border-left: 0; border-top: 1px solid var(--line); }
       .footer { display: block; line-height: 1.8; }
     }
-
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
 <body>
-  <header class="site-head wrap">
-    <div class="address">50 Archbishop Street</div>
-    <svg class="fanlight" viewBox="0 0 64 34" fill="none" aria-label="Fanlight at 50 Archbishop Street">
-      <path d="M4 32 A28 28 0 0 1 60 32" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M10 32 A22 22 0 0 1 54 32" stroke="currentColor" stroke-width="1"/>
-      <path d="M32 32 L32 10 M32 32 L21 13 M32 32 L43 13 M32 32 L13.4 20.6 M32 32 L50.6 20.6" stroke="currentColor" stroke-width="1"/>
-      <path class="hub" d="M26 32 A6 6 0 0 1 38 32" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M2 32 L62 32" stroke="currentColor" stroke-width="1.4"/>
-    </svg>
-    <div class="place">Valletta, Malta</div>
+  <header class="header">
+    <strong>50 Archbishop Street</strong>
+    <span class="middle">Valletta, Malta</span>
+    <span class="right">Floor 1</span>
   </header>
 
   <main>
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <p class="kicker">Floor 1</p>
-        <h1><span>50</span><span class="street">Archbishop Street</span></h1>
-        <p class="availability"><strong>Not available to rent at present.</strong><br />If that changes, it will say so here.</p>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>50 Archbishop</h1>
+        <p class="intro">This is my home in Valletta. Floor 1 has the kitchen, lounge, sitting room, bedroom and bathroom. The lower floor is downstairs.</p>
       </div>
-      <figure class="hero-image">
-        <img src="assets/photo-01-hero-kitchen-lounge.jpg" alt="The kitchen and lounge at 50 Archbishop Street" />
-        <figcaption class="caption">The kitchen and lounge</figcaption>
+      <figure class="hero-photo">
+        <img src="assets/photo-01-hero-kitchen-lounge.jpg" alt="The kitchen and lounge" />
       </figure>
     </section>
 
-    <section class="intro wrap">
-      <p class="intro-label">The house</p>
-      <div class="intro-copy">
-        <p>One floor of a Valletta townhouse, fifty paces from St John’s Co-Cathedral.</p>
-        <p>Honey-coloured limestone, black shutters, terrazzo, marble and rather more art than wall. Lived in, not staged. Quiet, by the measure of Valletta streets.</p>
+    <div class="section-title"><span>Floor 1</span><span>The rooms</span></div>
+
+    <section class="photos" aria-label="Photographs of Floor 1">
+      <div class="row two">
+        <figure class="photo"><img src="assets/photo-02-bedroom.jpg" alt="The bedroom" loading="lazy" /><figcaption>The bedroom</figcaption></figure>
+        <figure class="photo"><img src="assets/photo-03-lounge-mirror.jpg" alt="The lounge" loading="lazy" /><figcaption>The lounge</figcaption></figure>
+      </div>
+      <div class="row split">
+        <figure class="photo"><img src="assets/photo-04-doorway-yellow-room.jpg" alt="The sitting room seen through the black doors" loading="lazy" /><figcaption>The sitting room</figcaption></figure>
+        <figure class="photo"><img src="assets/photo-05-bedroom-alt.jpg" alt="The bedroom from the other side" loading="lazy" /><figcaption>The bedroom, from the other side</figcaption></figure>
+      </div>
+      <div class="row two">
+        <figure class="photo"><img src="assets/photo-06-bathroom.jpg" alt="The bathroom" loading="lazy" /><figcaption>The bathroom</figcaption></figure>
+        <figure class="photo"><img src="assets/photo-07-lounge-portrait.jpg" alt="The lounge in the evening" loading="lazy" /><figcaption>The lounge in the evening</figcaption></figure>
+      </div>
+      <div class="row">
+        <figure class="photo"><img src="assets/photo-08-courtyard.jpg" alt="The courtyard" loading="lazy" /><figcaption>The small courtyard</figcaption></figure>
       </div>
     </section>
 
-    <section class="gallery wrap" aria-label="Inside Floor 1">
-      <figure class="shot"><img src="assets/photo-02-bedroom.jpg" alt="The bedroom with its Venetian chandelier and art" loading="lazy" /><figcaption class="caption">The bedroom</figcaption></figure>
-      <figure class="shot"><img src="assets/photo-03-lounge-mirror.jpg" alt="The main lounge, seen towards the tall mirror" loading="lazy" /><figcaption class="caption">The lounge</figcaption></figure>
-      <figure class="shot"><img src="assets/photo-04-doorway-yellow-room.jpg" alt="Black doors opening into the yellow sitting room" loading="lazy" /><figcaption class="caption">The sitting room, through the doors</figcaption></figure>
-      <figure class="shot"><img src="assets/photo-05-bedroom-alt.jpg" alt="The bedroom from the doorway" loading="lazy" /><figcaption class="caption">The bedroom, from the door</figcaption></figure>
-      <figure class="shot"><img src="assets/photo-06-bathroom.jpg" alt="The bathroom with dark tile and freestanding bath" loading="lazy" /><figcaption class="caption">The bath</figcaption></figure>
-      <figure class="shot"><img src="assets/photo-07-lounge-portrait.jpg" alt="The lounge in the evening" loading="lazy" /><figcaption class="caption">The lounge, evening</figcaption></figure>
-      <figure class="shot"><img src="assets/photo-08-courtyard.jpg" alt="The small courtyard at dusk" loading="lazy" /><figcaption class="caption">The courtyard, at dusk</figcaption></figure>
+    <section class="details">
+      <h2>About Floor 1</h2>
+      <dl class="detail-list">
+        <div class="detail"><dt>Rooms</dt><dd>Kitchen and lounge, sitting room, one bedroom, bathroom and utility room.</dd></div>
+        <div class="detail"><dt>Building</dt><dd>A townhouse on Archbishop Street in central Valletta.</dd></div>
+        <div class="detail"><dt>Nearby</dt><dd>St John’s Co-Cathedral is at the end of the street. Republic Street is about a minute away.</dd></div>
+      </dl>
     </section>
 
-    <section class="facts">
-      <div class="facts-grid wrap">
-        <p class="section-label">What is here</p>
-        <div>
-          <dl class="fact-list">
-            <div class="fact"><dt>Rooms</dt><dd>One double bedroom, a sitting room, kitchen and lounge, bathroom, and utility room.</dd></div>
-            <div class="fact"><dt>In the house</dt><dd>Original art, washer and dryer, writing desk, and the furniture shown here.</dd></div>
-            <div class="fact"><dt>Outside</dt><dd>A small courtyard in the light-well. Enough room for two people and a bottle.</dd></div>
-            <div class="fact"><dt>Where</dt><dd>The middle of Archbishop Street, one minute from Republic Street.</dd></div>
-          </dl>
-          <a class="floor-zero-link" href="/0/">Downstairs: Floor 0 →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="nearby wrap">
-      <div class="nearby-head">
-        <p class="section-label">Nearby</p>
-        <h2>Four useful bearings</h2>
-      </div>
-      <div class="places">
-        <article class="place-card">
-          <p class="distance">50 paces</p>
-          <h3><a href="https://www.stjohnscocathedral.com/" target="_blank" rel="noopener">St John’s Co-Cathedral</a></h3>
-          <p>Caravaggio’s <em>Beheading of St John</em> is in the Oratory. It is the only painting he signed.</p>
-        </article>
-        <article class="place-card">
-          <p class="distance">1 minute</p>
-          <h3>Republic Street</h3>
-          <p>The city’s main street, running from the gate towards Fort St Elmo.</p>
-        </article>
-        <article class="place-card">
-          <p class="distance">4 minutes</p>
-          <h3><a href="https://teatrumanoel.mt/" target="_blank" rel="noopener">Teatru Manoel</a></h3>
-          <p>Europe’s third-oldest working theatre. Opened in 1732 and still very much alive.</p>
-        </article>
-        <article class="place-card">
-          <p class="distance">Around the corner</p>
-          <h3>Sailors Paradise</h3>
-          <p>The neighbourhood bar. First and last stop of most evenings.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact wrap" id="contact">
-      <div class="contact-layout">
-        <div>
-          <h2>Write</h2>
-          <p class="contact-note">The apartment is not available, but the letterbox works.</p>
-        </div>
-        <form class="contact-form" id="enquiry-form" method="POST" action="https://formspree.io/f/mbdqyrra" novalidate>
-          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name" /></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" /></div>
-          <div class="field field-wide"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
-          <input type="text" name="_gotcha" hidden tabindex="-1" autocomplete="off" />
-          <input type="hidden" name="_subject" value="Message via 50archbishop.com" />
-          <div class="send-row"><button type="submit">Send</button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></div>
-        </form>
-      </div>
+    <section class="floor-zero">
+      <p>There is another floor downstairs.</p>
+      <a href="/0/">See Floor 0 →</a>
     </section>
   </main>
 
-  <footer class="footer wrap">
-    <div>50 Archbishop Street, Valletta, Malta</div>
-    <div><a href="/0/">Floor 0</a></div>
+  <footer class="footer">
+    <span>50 Archbishop Street</span>
+    <span>Valletta, Malta</span>
   </footer>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph enlarged" aria-hidden="true">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Enlarged photograph">
     <img id="lightbox-image" alt="" />
     <button type="button" id="lightbox-close" aria-label="Close">×</button>
   </div>
 
   <script>
     (function () {
-      var lightbox = document.getElementById('lightbox')
-      var lightboxImage = document.getElementById('lightbox-image')
-      var closeButton = document.getElementById('lightbox-close')
-      var photos = document.querySelectorAll('.gallery img')
-
-      function closeLightbox() {
-        lightbox.classList.remove('is-open')
-        lightbox.setAttribute('aria-hidden', 'true')
+      var box = document.getElementById('lightbox')
+      var large = document.getElementById('lightbox-image')
+      function close() {
+        box.classList.remove('open')
+        box.setAttribute('aria-hidden', 'true')
         document.body.style.overflow = ''
       }
-
-      photos.forEach(function (photo) {
-        photo.addEventListener('click', function () {
-          lightboxImage.src = photo.currentSrc || photo.src
-          lightboxImage.alt = photo.alt
-          lightbox.classList.add('is-open')
-          lightbox.setAttribute('aria-hidden', 'false')
+      document.querySelectorAll('.photo img').forEach(function (image) {
+        image.addEventListener('click', function () {
+          large.src = image.currentSrc || image.src
+          large.alt = image.alt
+          box.classList.add('open')
+          box.setAttribute('aria-hidden', 'false')
           document.body.style.overflow = 'hidden'
         })
       })
-
-      closeButton.addEventListener('click', closeLightbox)
-      lightbox.addEventListener('click', function (event) {
-        if (event.target === lightbox) closeLightbox()
-      })
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') closeLightbox()
-      })
-
-      var form = document.getElementById('enquiry-form')
-      var status = document.getElementById('form-status')
-      form.addEventListener('submit', function (event) {
-        event.preventDefault()
-        if (!form.checkValidity()) {
-          form.reportValidity()
-          return
-        }
-        status.textContent = 'Sending…'
-        status.className = 'form-status'
-        fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
-          .then(function (response) {
-            if (!response.ok) throw new Error('Send failed')
-            form.reset()
-            status.textContent = 'Sent. Thank you.'
-          })
-          .catch(function () {
-            status.textContent = 'Something went wrong. Please try again.'
-            status.className = 'form-status is-error'
-          })
-      })
+      document.getElementById('lightbox-close').addEventListener('click', close)
+      box.addEventListener('click', function (event) { if (event.target === box) close() })
+      document.addEventListener('keydown', function (event) { if (event.key === 'Escape') close() })
     })()
   </script>
-  <span class="deploy-stamp" aria-hidden="true">2026-07-23 15:10 UTC</span>
+  <span class="deploy-stamp" aria-hidden="true">2026-07-23 15:43 UTC</span>
 </body>
 </html>

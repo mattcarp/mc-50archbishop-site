@@ -2,191 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Floor 0 · 50 Archbishop Street, Valletta</title>
-  <meta name="description" content="Floor 0 of 50 Archbishop Street, Valletta: the older half of the house, reached by a staircase dated 1647." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Floor 0 · 50 Archbishop Street</title>
+  <meta name="description" content="Floor 0 at 50 Archbishop Street in Valletta." />
   <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="https://50archbishop.com/0/" />
-  <meta name="theme-color" content="#181713" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23181713'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='serif' font-size='18' fill='%23eee9df'%3E0%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#101010" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial' font-size='16' fill='white'%3E0%3C/text%3E%3C/svg%3E" />
   <link rel="preload" href="../assets/flat0-01-chaise.jpg" as="image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Libre+Caslon+Text:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --paper: #eee9df;
-      --ink: #181713;
-      --muted: #9b9489;
-      --red: #a74834;
-      --line: rgba(238, 233, 223, 0.22);
-      --serif: "Libre Caslon Text", Georgia, serif;
-      --sans: "Inter", Helvetica, Arial, sans-serif;
-    }
+    :root { --bg: #101010; --ink: #f2f1ed; --muted: #9a9994; --line: #393939; --pad: clamp(16px, 2.2vw, 34px); }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      color: var(--paper);
-      background: var(--ink);
-      font-family: var(--serif);
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-underline-offset: 0.18em; }
+    body { margin: 0; color: var(--ink); background: var(--bg); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.35; -webkit-font-smoothing: antialiased; }
     img { display: block; width: 100%; }
-    .wrap { width: min(100% - 40px, 1240px); margin-inline: auto; }
-
-    .site-head {
-      min-height: 96px;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      border-bottom: 1px solid var(--line);
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 12px;
-    }
-    .site-head a { text-decoration: none; }
-    .site-head a:hover { color: var(--paper); }
-    .site-head .address { text-align: right; }
-    .fanlight { width: 54px; height: auto; color: var(--paper); }
-    .fanlight .hub { color: var(--red); }
-
-    .hero {
-      min-height: calc(100vh - 96px);
-      display: grid;
-      grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
-      gap: clamp(34px, 7vw, 110px);
-      align-items: center;
-      padding: clamp(52px, 8vw, 110px) 0;
-    }
-    .kicker { margin: 0 0 28px; color: var(--red); font-family: var(--sans); font-size: 12px; }
-    h1 {
-      margin: 0 0 clamp(42px, 7vw, 84px);
-      font-size: clamp(4.5rem, 11vw, 10rem);
-      font-weight: 400;
-      letter-spacing: -0.075em;
-      line-height: 0.78;
-    }
-    h1 span { display: block; }
-    h1 .floor { margin-top: 0.4em; font-size: 0.34em; letter-spacing: -0.035em; }
-    .lead {
-      max-width: 32rem;
-      margin: 0;
-      font-size: clamp(1.25rem, 2.1vw, 1.85rem);
-      line-height: 1.48;
-      letter-spacing: -0.015em;
-    }
-    .lead strong { color: var(--red); font-weight: 400; }
-    .portrait { margin: 0; }
-    .portrait img { max-height: 78vh; object-fit: cover; object-position: center; }
-    .caption { margin-top: 11px; color: var(--muted); font-family: var(--sans); font-size: 11px; }
-
-    .story {
-      display: grid;
-      grid-template-columns: 0.72fr 1.28fr;
-      gap: clamp(28px, 9vw, 150px);
-      align-items: start;
-      padding: clamp(80px, 12vw, 170px) 0;
-      border-top: 1px solid var(--line);
-    }
-    .story-label { margin: 0; color: var(--muted); font-family: var(--sans); font-size: 12px; }
-    .story-copy { max-width: 46rem; }
-    .story-copy p {
-      margin: 0 0 1.15em;
-      font-size: clamp(1.5rem, 3vw, 3rem);
-      line-height: 1.28;
-      letter-spacing: -0.03em;
-    }
-    .story-copy p:last-child { margin-bottom: 0; color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.3rem); letter-spacing: 0; line-height: 1.55; }
-
-    .back {
-      background: var(--paper);
-      color: var(--ink);
-      padding: clamp(80px, 11vw, 150px) 0;
-    }
-    .back-layout {
-      display: grid;
-      grid-template-columns: 0.72fr 1.28fr;
-      gap: clamp(28px, 9vw, 150px);
-      align-items: end;
-    }
-    .back p { margin: 0; color: #686057; font-family: var(--sans); font-size: 12px; }
-    .back a {
-      font-size: clamp(2.2rem, 6vw, 5.8rem);
-      letter-spacing: -0.055em;
-      line-height: 0.95;
-      text-decoration-thickness: 1px;
-    }
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      padding: 28px 0 42px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-family: var(--sans);
-      font-size: 11px;
-    }
-
-    @media (max-width: 760px) {
-      .wrap { width: min(100% - 28px, 1240px); }
-      .site-head { min-height: 76px; grid-template-columns: 1fr auto; }
-      .site-head .address { display: none; }
-      .fanlight { width: 46px; }
-      .hero { min-height: auto; grid-template-columns: 1fr; padding: 54px 0 90px; }
-      h1 { font-size: clamp(4.8rem, 26vw, 7rem); }
-      .portrait { margin-top: 16px; }
-      .portrait img { max-height: none; }
-      .story, .back-layout { grid-template-columns: 1fr; gap: 30px; }
-      .footer { display: block; line-height: 1.8; }
+    a { color: inherit; text-underline-offset: 3px; }
+    .header { display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; padding: 18px var(--pad); border-bottom: 1px solid var(--line); }
+    .header .middle { text-align: center; color: var(--muted); }
+    .header .right { text-align: right; }
+    .header a { text-decoration: none; }
+    .main { display: grid; grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr); min-height: calc(100vh - 55px); }
+    .text { display: flex; flex-direction: column; justify-content: space-between; padding: var(--pad); border-right: 1px solid var(--line); }
+    h1 { max-width: 7ch; margin: 0; font-size: clamp(4rem, 9vw, 9rem); font-weight: 700; letter-spacing: -0.075em; line-height: 0.82; }
+    .description { max-width: 32rem; margin: 80px 0 0; font-size: clamp(1rem, 1.4vw, 1.3rem); line-height: 1.45; }
+    .description p { margin: 0 0 1em; }
+    .description p:last-child { margin-bottom: 0; color: var(--muted); }
+    figure { margin: 0; padding: var(--pad); }
+    figure img { height: calc(100vh - 55px - (var(--pad) * 2)); object-fit: cover; }
+    figcaption { margin-top: 9px; color: var(--muted); }
+    .back { display: grid; grid-template-columns: 1fr 2fr; align-items: center; border-top: 1px solid var(--line); }
+    .back p { margin: 0; padding: var(--pad); color: var(--muted); }
+    .back a { display: block; padding: var(--pad); border-left: 1px solid var(--line); font-size: clamp(2rem, 6vw, 6rem); font-weight: 700; letter-spacing: -0.06em; line-height: .95; text-decoration: none; }
+    .back a:hover { color: var(--bg); background: var(--ink); }
+    @media (max-width: 720px) {
+      .header { grid-template-columns: 1fr auto; }
+      .header .middle { display: none; }
+      .main { grid-template-columns: 1fr; min-height: auto; }
+      .text { min-height: 55vh; border-right: 0; border-bottom: 1px solid var(--line); }
+      h1 { font-size: clamp(5rem, 26vw, 8rem); }
+      figure img { height: auto; }
+      .back { grid-template-columns: 1fr; }
+      .back a { border-left: 0; border-top: 1px solid var(--line); }
     }
   </style>
 </head>
 <body>
-  <header class="site-head wrap">
-    <div><a href="/">← Floor 1</a></div>
-    <svg class="fanlight" viewBox="0 0 64 34" fill="none" aria-label="Fanlight at 50 Archbishop Street">
-      <path d="M4 32 A28 28 0 0 1 60 32" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M10 32 A22 22 0 0 1 54 32" stroke="currentColor" stroke-width="1"/>
-      <path d="M32 32 L32 10 M32 32 L21 13 M32 32 L43 13 M32 32 L13.4 20.6 M32 32 L50.6 20.6" stroke="currentColor" stroke-width="1"/>
-      <path class="hub" d="M26 32 A6 6 0 0 1 38 32" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M2 32 L62 32" stroke="currentColor" stroke-width="1.4"/>
-    </svg>
-    <div class="address">50 Archbishop Street</div>
+  <header class="header">
+    <a href="/">← Floor 1</a>
+    <span class="middle">50 Archbishop Street</span>
+    <span class="right">Floor 0</span>
   </header>
 
-  <main>
-    <section class="hero wrap">
-      <div>
-        <p class="kicker">Below street level</p>
-        <h1><span>50</span><span class="floor">Floor 0</span></h1>
-        <p class="lead">The older half of the house, reached by a stone staircase dated <strong>1647</strong>.</p>
+  <main class="main">
+    <div class="text">
+      <h1>Floor 0</h1>
+      <div class="description">
+        <p>This is the lower floor of the house.</p>
+        <p>The staircase leading down to it is dated 1647. There is only one photograph here for now.</p>
       </div>
-      <figure class="portrait">
-        <img src="../assets/flat0-01-chaise.jpg" alt="A gold chaise beside the courtyard door on Floor 0" />
-        <figcaption class="caption">The chaise, by the courtyard door. Photograph by Fiona.</figcaption>
-      </figure>
-    </section>
-
-    <section class="story wrap">
-      <p class="story-label">For now</p>
-      <div class="story-copy">
-        <p>One room, one photograph. That is enough until the rest are worth showing.</p>
-        <p>Floor 0 is not available to rent. More of it will appear here after Fiona has finished photographing it.</p>
-      </div>
-    </section>
-
-    <section class="back">
-      <div class="back-layout wrap">
-        <p>Up the 1647 staircase</p>
-        <a href="/">Return to Floor 1 →</a>
-      </div>
-    </section>
+    </div>
+    <figure>
+      <img src="../assets/flat0-01-chaise.jpg" alt="A chaise beside the courtyard door on Floor 0" />
+      <figcaption>The chaise beside the courtyard door. Photograph by Fiona.</figcaption>
+    </figure>
   </main>
 
-  <footer class="footer wrap">
-    <div>50 Archbishop Street, Valletta, Malta</div>
-    <div>Floor 0</div>
-  </footer>
+  <nav class="back">
+    <p>Upstairs</p>
+    <a href="/">Return to Floor 1 →</a>
+  </nav>
 </body>
 </html>
